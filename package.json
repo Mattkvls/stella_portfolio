@@ -1,0 +1,22 @@
+{
+  "name": "stella_portfolio",
+  "version": "1.0.0",
+  "description": "stella's portfolio ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattkvls/stella_portfolio.git"
+  },
+  "author": "Matt Kvls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattkvls/stella_portfolio/issues"
+  },
+  "homepage": "https://github.com/Mattkvls/stella_portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

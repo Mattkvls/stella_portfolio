@@ -1,0 +1,43 @@
+//-------------------COLORS-----------------------------
+$color-primary:#4bcffa;
+$color-primary-medium:#06a5d9;
+$color-primary-dark:#010e13;
+
+
+$color-secondary:#ffd32a; //for headings 
+$color-sections:#d2dae2; // for section differantiation 
+$color-text:#485460;
+
+
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: 'Lato',sans-serif ;
+    font-weight: 400;
+    color: #485460;
+    box-sizing: border-box;
+}
+
+//------------------------HEADER---------------------------------------------
+// .header{
+
+// }
+// .navigation{}
+// .main-nav{}
+// .nav-item{}
+// .nav-link{}
+
+// .hero-text{}
+// .heading-primary{}
+// .btn{}
+// .btn-ghost{}
