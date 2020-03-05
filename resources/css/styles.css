@@ -3,7 +3,7 @@
 *::before{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 html{
     font-size: 62,5%;
@@ -13,6 +13,8 @@ body{
     font-family: 'Lato', ;
     font-weight: 300;
     color: #485460;
+    box-sizing: border-box;
+    line-height: 1.7;
 }
 .row{
     max-width: 1140px;

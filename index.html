@@ -12,16 +12,24 @@
             <nav class="navigation">
                 <div class="row">
                     <ul class="main-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="main-nav__nav-item">
+                            <a href="#" class="main-nav__nav-link">Home</a>
+                        </li>
+                        <li class="main-nav__nav-item">
+                            <a href="#" class="main-nav__nav-link">About</a>
+                        </li>
+                        <li class="main-nav__nav-item">
+                            <a href="#" class="main-nav__nav-link">Projects</a>
+                        </li>
+                        <li class="main-nav__nav-item">
+                            <a href="#" class="main-nav__nav-link">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-        <div class="hero-text">
-            <h1 class="heading-primary">hello, i'm <span id="name">stella Katsarou</span>
-            <span id="heading-primary-sub">I'm a machine learning Student</span></h1>
+        <div class="header__hero-text">
+            <h1 class="heading-primary heading-primary--main">hello, i'm <span id="name">stella Katsarou</span>
+            <span id="heading-primary heading-primary--sub">I'm a machine learning Student</span></h1>
             <a href="" class="btn btn-ghost">learn more</a>
         </div>
     </header>
@@ -29,11 +37,11 @@
         <div class="row">
             <h2 class="heading-secondary">About</h2>
             <div class="box clearfix">
-                <div class="image-box">
-                    <img class="profile-img" src="https://shop-resources.prod.cms.tractorsupply.com/resource/image/18248/portrait_ratio3x4/595/793/4c37b7f6d6f9d8a5b223334f1390191b/JJ/ten-reasons-not-to-buy-an-easter-bunny-main.jpg" alt="">
+                <div class="about__image-box">
+                    <img class="about__profile-img" src="https://shop-resources.prod.cms.tractorsupply.com/resource/image/18248/portrait_ratio3x4/595/793/4c37b7f6d6f9d8a5b223334f1390191b/JJ/ten-reasons-not-to-buy-an-easter-bunny-main.jpg" alt="">
                 </div>
-                <div class="image-text-box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero iusto laborum accusantium id earum velit doloribus excepturi animi autem laboriosam, commodi cum. Ut magni nam reprehenderit, iste natus iure mollitia numquam amet sed aliquam neque tenetur dolorum officiis corporis ducimus unde ipsa, quidem ipsum repudiandae. Voluptatum dolorum quae veniam adipisci dolorem quibusdam aperiam magni facere harum commodi in iure nulla, necessitatibus, qui tempora.</p>
+                <div class="about__image-text-box">
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero iusto laborum accusantium id earum velit doloribus excepturi animi autem laboriosam, commodi cum. Ut magni nam reprehenderit, iste natus iure mollitia numquam amet sed aliquam neque tenetur dolorum officiis corporis ducimus unde ipsa, quidem ipsum repudiandae. Voluptatum dolorum quae veniam adipisci dolorem quibusdam aperiam magni facere harum commodi in iure nulla, necessitatibus, qui tempora.</p>
                 </div>
             </div>
         </div>
@@ -42,66 +50,71 @@
         <div class="row">
             <h2 class="heading-secondary">Projects</h2>
         </div>
-        <div class="project-master-box">
-            <div class="projects-box">
+        <div class="projects__master-box">
+            <div class="projects__project-box">
                 <h3 class="heading-tertiary">Machine Learning Project</h3>
-                <ul class="project-list">
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
+                <ul class="projects__project-list">
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
                 </ul>
             </div>
-            <div class="projects-box">
+            <div class="projects__project-box">
                 <h3 class="heading-tertiary">Machine Learning Project</h3>
-                <ul class="project-list">
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
+                <ul class="projects__project-list">
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
                 </ul>
             </div>
-            <div class="projects-box">
+            <div class="projects__project-box">
                 <h3 class="heading-tertiary">Machine Learning Project</h3>
-                <ul class="project-list">
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
-                    <li class="project-item">machine</li>
+                <ul class="projects__project-list">
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
+                    <li class="projects__project-item">machine</li>
                 </ul>
             </div>
-        </div>
+        </div><!--master-box end div -->
     </section>
     <section class="contact">
         <div class="row">
             <h2 class="heading-secondary">Contact</h2>
-            <form action="" method="" class="form">
-                <div class="form-group">
+            <form action="" method="" class="contact__form">
+                <div class="contact__form-group">
                     <label for="name">Your name please</label>
                     <input type="text" name="name" placeholder="Your name" id="name">
                 </div>
-                <div class="form-group">
+                <div class="contact__form-group">
                     <label for="email">Your email please</label>
                     <input type="email" name="email" id="email" placeholder="Your email">
                 </div>
-                <div class="form-group">
+                <div class="contact__form-group">
                     <label for="message">Your message </label>
                     <textarea name="message" id="message" cols="30" rows="10">type your message here</textarea>
                 </div>
-                <input type="submit">
+                <input type="submit" class="btn btn-submit">
             </form>
         </div>
     </section>
     <footer class="footer">
-        <div class="social-box">
-            <ul class="social-list">
-                <li><a class="social-link" href="">facebook</a></li>
-                <li><a class="social-link" href="">LinkedIn</a></li>
-                <li><a class="social-link" href="">GitHub</a></li>
+        <div class="footer__social-box">
+            <ul class="footer__social-list">
+                <li>
+                    <a class="footer__social-link" href="">facebook</a>
+                </li>
+                <li>
+                    <a class="footer__social-link" href="">LinkedIn</a>
+                </li>
+                <li>
+                    <a class="footer__social-link" href="">GitHub</a>
+                </li>
             </ul>
         </div>
-        <p class="copyright-text">Copyright © 2020 by Matt Katsivelis</p>
-
+        <p class="footer__copyright-text">Copyright © 2020 by Matt Katsivelis</p>
     </footer>
 
     <script src="./resources/vendors/particles.min.js"></script>
