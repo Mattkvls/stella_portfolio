@@ -23,6 +23,11 @@ body{
 section{
     padding: 80px 0;
 }
+.clearfix::after{
+    display: table;
+    clear: both;
+    content:"";
+}
 /*----------------------HEADINGS-------------------------------*/
 .heading-primary,
 .heading-secondary,
@@ -92,7 +97,7 @@ h2:after{
     overflow: hidden;
     text-align: center;
 }
-.hero-text{
+.header__hero-text{
     position:absolute;
     top:50%;
     left:50%;
@@ -101,10 +106,10 @@ h2:after{
     font-size: 100%;
 
 }
-#name{
+.heading-primary--name{
     color: #ffd32a;
 }
-#heading-primary-sub{
+.heading-primary--sub{
     display: block;
 }
 /*---------------------NAVIGATION----------------------------------------*/
@@ -117,13 +122,13 @@ h2:after{
 .main-nav{
     list-style-type: none;
 }
-.nav-item{
+.main-nav__nav-item{
     display: inline-block;
     margin-right: 30px;
 }
 /*the links at the navigation bar*/
-.nav-link:link,
-.nav-link:visited{
+.main-nav__nav-link:link,
+.main-nav__nav-link:visited{
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -134,62 +139,60 @@ h2:after{
     border-bottom: 2px solid transparent;
     transition: border-bottom ease 0.2s;
 }
-.nav-link:hover,
-.nav-link:visited{
+.main-nav__nav-link:hover,
+.main-nav__nav-link:visited{
     border-bottom: 2px solid #ffd32a;;
 }
 /*--------------------------------------ABOUT----------------------------------------*/
 .about{
     background-color: darkgray;
 }
-.box{
+.about__box{
     margin: 2%;
 }
-.image-box{
+.about__image-box{
     width: 26%;
     height: auto;
     float: left;
     text-align: center;
 }
-.profile-img{
+.about__profile-img{
     display:inline-block;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-.image-text-box{
+.about__image-text-box{
     margin-top: 40px;
     float: left;
     width: 60%;
 }
-.clearfix::after{
-    display: table;
-    clear: both;
-    content:"";
+.about__text{
+    font-size: 2rem;
 }
 /*--------------------------------------PROJECTS----------------------------------------*/
 .projects{
     background-color: chocolate;
 }
-.project-master-box{
+.projects__master-box{
     width: 80%;
     margin-left: 10%;
 }
-.projects-box{
+.projects__project-box{
     display: inline-block;
     width: 30%;
     margin: 0 auto;
     border: 1px solid black;
     margin-right: 5px;
 }
-.project-list{
+.projects__project-list{
     list-style: none;
 }
-.project-item{
+.projects__project-item{
     color: black;
 }
 /*--------------------------------------CONTACT----------------------------------------*/
-.form{
+.contact__form{
     background-color: darkseagreen;
     padding: 20px;
     width: 60%;
@@ -197,31 +200,34 @@ h2:after{
     border: 1px solid black;
     text-align: center;
 }
-.form-group{
+.contact__form-group{
     width: 100%;
     margin-bottom: 1%;
 }
+.contact__label{border: 1px solid red;}
+.contact__input{border: 1px solid red}
+.contact__textarea{border: 1px solid red}
 /*--------------------------------------FOOTER----------------------------------------*/
 .footer{ 
     padding: 50px;
     background-color: cyan;
     text-align: center;
 }
-.social-box{
+.footer__social-box{
     width: 100%;
 }
-.social-list li{
+.footer__social-list li{
     padding-top: 50px;
     display: inline-block;
     margin-bottom: 50px;
 }
-.social-link{
+.footer__social-link{
     display: inline-block;
     text-decoration: none;
     margin-right: 20px;
 }
-.copyright-text{
-    /* padding-bottom: 30px; */
+.footer__copyright-text{
+    font-size: 2rem;
 }
 *:focus{
     outline: none;
