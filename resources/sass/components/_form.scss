@@ -1,0 +1,19 @@
+/*--------------------------------------CONTACT----------------------------------------*/
+.contact{
+    @at-root #{&}__form{
+        background-color: darkseagreen;
+        padding: 20px;
+        width: 60%;
+        margin:0 auto;
+        border: 1px solid black;
+        text-align: center;
+    }
+    @at-root #{&}__form-group{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    @at-root #{&}__label{border: 1px solid red;}
+    @at-root #{&}__input{border: 1px solid red}
+    @at-root #{&}__textarea{border: 1px solid red}
+
+}

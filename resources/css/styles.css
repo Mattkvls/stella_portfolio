@@ -8,26 +8,19 @@
 html {
   font-size: 62,5%; }
 
-body {
-  font-family: "Lato";
-  font-weight: 300;
-  color: #485460;
-  box-sizing: border-box; }
-
 .row {
   max-width: 1140px;
   margin: 0 auto; }
 
-section {
-  padding: 80px 0; }
-
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: ""; }
-
 *:focus {
   outline: none; }
+
+body {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #485460;
+  box-sizing: border-box;
+  line-height: 1.7; }
 
 /*----------------------HEADINGS-------------------------------*/
 .heading-primary,
@@ -97,6 +90,50 @@ h2:after {
     padding: 7px 15px; }
   .btn-colored:hover, .btn-colored:active {
     color: red; }
+
+/*--------------------------------------CONTACT----------------------------------------*/
+.contact__form {
+  background-color: darkseagreen;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center; }
+
+.contact__form-group {
+  width: 100%;
+  margin-bottom: 1%; }
+
+.contact__label {
+  border: 1px solid red; }
+
+.contact__input {
+  border: 1px solid red; }
+
+.contact__textarea {
+  border: 1px solid red; }
+
+/*--------------------------------------FOOTER----------------------------------------*/
+.footer {
+  padding: 50px;
+  background-color: cyan;
+  text-align: center; }
+  .footer__social-box {
+    width: 100%; }
+  .footer__social-list li {
+    padding-top: 50px;
+    display: inline-block;
+    margin-bottom: 50px; }
+  .footer__social-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 40px; }
+  .footer__copyright-text {
+    font-size: 100%; }
+  .footer__icon-text {
+    display: block;
+    text-transform: uppercase;
+    font-size: 80%; }
 
 /*---------------------HEADER--------------------------------------------*/
 .header {
@@ -190,46 +227,5 @@ h2:after {
   .projects__project-item {
     color: black; }
 
-/*--------------------------------------CONTACT----------------------------------------*/
-.contact__form {
-  background-color: darkseagreen;
-  padding: 20px;
-  width: 60%;
-  margin: 0 auto;
-  border: 1px solid black;
-  text-align: center; }
-
-.contact__form-group {
-  width: 100%;
-  margin-bottom: 1%; }
-
-.contact__label {
-  border: 1px solid red; }
-
-.contact__input {
-  border: 1px solid red; }
-
-.contact__textarea {
-  border: 1px solid red; }
-
-/*--------------------------------------FOOTER----------------------------------------*/
-.footer {
-  padding: 50px;
-  background-color: cyan;
-  text-align: center; }
-  .footer__social-box {
-    width: 100%; }
-  .footer__social-list li {
-    padding-top: 50px;
-    display: inline-block;
-    margin-bottom: 50px; }
-  .footer__social-link {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 40px; }
-  .footer__copyright-text {
-    font-size: 100%; }
-  .footer__icon-text {
-    display: block;
-    text-transform: uppercase;
-    font-size: 80%; }
+section {
+  padding: 80px 0; }

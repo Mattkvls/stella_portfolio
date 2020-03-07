@@ -1,0 +1,99 @@
+/*---------------------NAVIGATION----------------------------------------*/
+.navigation{
+    float: right;
+    margin-top: 50px;
+    margin-right: 40px;
+    /* color: #ffffff94; */
+}
+.main-nav{
+    list-style-type: none;
+
+    &__nav-item{
+        display: inline-block;
+        margin-right: 30px;
+    }
+    /*the links at the navigation bar*/
+    &__nav-link{
+        &:link,
+        &:visited{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 130%;
+            font-weight: 300;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom ease 0.2s;
+        }
+        &:hover,
+        &:active{
+            border-bottom: 2px solid #ffd32a;;
+        }
+    }
+}
+
+/*--------------------------------------ABOUT----------------------------------------*/
+.about{
+    background-color: darkgray;
+    &__box{
+        margin: 2%;
+        //include the clearfix mixin 
+        @include Clearfix;
+    }
+    &__image-box{
+        width: 26%;
+        height: auto;
+        float: left;
+        text-align: center;
+    }
+    &__profile-img{
+        display:inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: -50px;
+        margin-top: 20px;
+    }
+    &__image-text-box{
+        margin-top: 40px;
+        float: left;
+        width: 60%;
+    }
+    &__text{
+        font-size: 100%;
+        line-height: 145%;
+        max-width: 75ch;
+    }
+}
+
+/*--------------------------------------PROJECTS----------------------------------------*/
+.projects{
+    background-color: chocolate;
+
+    &__master-box{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    &__project-box{
+        display: inline-block;
+        padding: 15px;
+        width: 30%;
+        margin: 0 auto;
+        border: 1px solid black;
+        margin-right: 5px;
+        text-align: center;
+    }
+    &__project-list{
+        list-style: none;
+    }
+    &__project-item{
+        color: black;
+    }
+}
+
+section{
+    padding: 80px 0;
+}

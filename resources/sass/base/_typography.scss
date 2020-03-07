@@ -1,0 +1,46 @@
+body{
+    font-family: 'Lato', ;
+    font-weight: 300;
+    color: $color-text-dark;
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+/*----------------------HEADINGS-------------------------------*/
+.heading-primary,
+.heading-secondary,
+.heading-tertiary{
+    font-weight:300;
+    text-transform: uppercase;
+}
+.heading-primary{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $color-text-light;
+    font-size: 240%; /*make it relative to the html font-size*/
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.heading-secondary{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.heading-tertiary{
+    margin: 10px 0;
+}
+
+h2:after{
+    content:" ";
+    display:block;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+#name{
+    color: #ffd32a;
+}
+.heading-primary--sub{
+    display: block;
+}

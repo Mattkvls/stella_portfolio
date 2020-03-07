@@ -1,0 +1,9 @@
+//create the clearfix mixin and the position absolute
+@mixin clearfix{
+    &::after{
+        display: table;
+        clear: both;
+        content:"";
+    }
+}
+

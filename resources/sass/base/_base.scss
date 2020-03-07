@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    //sets the 1 rem to 10px
+    font-size: 62,5%;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+*:focus{
+    outline: none;
+}

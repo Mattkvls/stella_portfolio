@@ -1,0 +1,47 @@
+
+
+/*--------------------------------BUTTONS-------------------------------------------------*/
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 200px;
+    font-size: 100%;
+
+    &-ghost{
+        &:link,
+        &:visited{
+            border: 1px solid #ffd32a;
+            box-shadow: 0 3px 10px black;
+            color:#ffd32a;
+            margin-top: 1%;
+            background-color: #4bcffa;
+            backface-visibility: hidden;
+        }
+        &:hover{
+            transform: translateY(-3px);
+            border: 1px solid #ffd32a;
+            box-shadow: 0 2px 10px black;
+            color:#ffd32a;
+            background-color: #4bcffa;
+        }
+        &:active{
+            box-shadow: 0 2px 7px black;
+            transform: translateY(0);
+        }
+    }
+    &-colored{
+        &:link,
+        &:visited{
+            border: 1px solid white;
+            color: white;
+            margin-top: 15px;
+            padding: 7px 15px;
+        }
+        &:hover,
+        &:active{
+            color: red;
+        }
+    }
+}
+
