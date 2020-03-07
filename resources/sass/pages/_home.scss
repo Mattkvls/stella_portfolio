@@ -1,45 +1,10 @@
-/*---------------------NAVIGATION----------------------------------------*/
-.navigation{
-    float: right;
-    margin-top: 50px;
-    margin-right: 40px;
-    /* color: #ffffff94; */
-}
-.main-nav{
-    list-style-type: none;
-
-    &__nav-item{
-        display: inline-block;
-        margin-right: 30px;
-    }
-    /*the links at the navigation bar*/
-    &__nav-link{
-        &:link,
-        &:visited{
-            text-align: center;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: white;
-            font-size: 130%;
-            font-weight: 300;
-            padding: 8px 0;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom ease 0.2s;
-        }
-        &:hover,
-        &:active{
-            border-bottom: 2px solid #ffd32a;;
-        }
-    }
-}
-
 /*--------------------------------------ABOUT----------------------------------------*/
 .about{
     background-color: darkgray;
+    @include clearfix;
     &__box{
         margin: 2%;
         //include the clearfix mixin 
-        @include Clearfix;
     }
     &__image-box{
         width: 26%;

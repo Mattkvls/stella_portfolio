@@ -183,6 +183,10 @@ h2:after {
 /*--------------------------------------ABOUT----------------------------------------*/
 .about {
   background-color: darkgray; }
+  .about::after {
+    display: table;
+    clear: both;
+    content: ""; }
   .about__box {
     margin: 2%; }
   .about__image-box {
