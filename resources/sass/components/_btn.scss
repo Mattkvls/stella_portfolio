@@ -11,7 +11,7 @@
     &-ghost{
         &:link,
         &:visited{
-            border: 1px solid #ffd32a;
+            border: 1px solid $color-secondary;
             box-shadow: 0 3px 10px black;
             color:#ffd32a;
             margin-top: 1%;

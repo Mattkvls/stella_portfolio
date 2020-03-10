@@ -1,11 +1,7 @@
 /*--------------------------------------ABOUT----------------------------------------*/
 .about{
     background-color: darkgray;
-    @include clearfix;
-    &__box{
-        margin: 2%;
-        //include the clearfix mixin 
-    }
+  
     &__image-box{
         width: 26%;
         height: auto;
@@ -20,16 +16,7 @@
         margin-right: -50px;
         margin-top: 20px;
     }
-    &__image-text-box{
-        margin-top: 40px;
-        float: left;
-        width: 60%;
-    }
-    &__text{
-        font-size: 100%;
-        line-height: 145%;
-        max-width: 75ch;
-    }
+  
 }
 
 /*--------------------------------------PROJECTS----------------------------------------*/
