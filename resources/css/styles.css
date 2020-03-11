@@ -168,20 +168,29 @@ h2:after {
 
 /*--------------------------------------FOOTER----------------------------------------*/
 .footer {
-  padding: 50px;
+  padding: 8rem;
   background-color: #0e1419;
   text-align: center;
+  font-size: 1.6rem;
   color: white; }
   .footer__social-box {
-    width: 100%; }
-  .footer__social-list li {
-    padding-top: 50px;
-    display: inline-block;
-    margin-bottom: 50px; }
-  .footer__social-link {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 5rem; }
+  .footer__link-box--1 {
+    margin-right: -30rem; }
+  .footer__link-box--3 {
+    margin-left: -31rem; }
+  .footer__social-link:link, .footer__social-link:visited {
     display: inline-block;
     text-decoration: none;
-    margin-right: 40px; }
+    color: #44607c;
+    transition: all .2s; }
+    .footer__social-link:link:not(:last-child), .footer__social-link:visited:not(:last-child) {
+      margin-right: 4rem; }
+  .footer__social-link:hover, .footer__social-link:active {
+    color: #507192;
+    transform: scale(1.1); }
   .footer__copyright-text {
     font-size: 100%; }
   .footer__icon-text {
@@ -189,6 +198,14 @@ h2:after {
     display: block;
     text-transform: uppercase;
     font-size: 80%; }
+  .footer__copyright-box {
+    font-size: 1.2rem;
+    font-family: inherit;
+    display: inline-block; }
+  .footer__copyright-link:link, .footer__copyright-link:visited {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none; }
 
 /*---------------------HEADER--------------------------------------------*/
 .header {
@@ -309,12 +326,13 @@ h2:after {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: inherit;
     padding: 2.5rem;
+    padding-bottom: 3rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: all 0.3s; }
     .projects .project__paragraph {
-      margin-bottom: .5rem; }
+      margin-bottom: .7rem; }
     .projects .project:hover {
       background-color: rgba(255, 255, 255, 0.9);
       transform: translateY(-1.5rem) scale(1.03); }
