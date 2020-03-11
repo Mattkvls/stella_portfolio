@@ -96,7 +96,9 @@ h2:after {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 200px;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: white;
+  background-color: #44607c; }
   .btn-ghost:link, .btn-ghost:visited {
     border: 1px solid transparent;
     box-shadow: 0 3px 10px black;
@@ -107,32 +109,34 @@ h2:after {
   .btn-ghost:hover {
     transform: translateY(-3px);
     border: 1px solid #44607c;
-    box-shadow: 0 2px 10px black;
-    color: white;
-    background-color: #507192; }
+    box-shadow: 0 2px 10px black; }
   .btn-ghost:active {
     box-shadow: 0 2px 7px black;
     transform: translateY(0); }
-  .btn-colored:link, .btn-colored:visited {
-    border: 1px solid white;
-    color: white;
-    margin-top: 15px;
-    padding: 7px 15px; }
-  .btn-colored:hover, .btn-colored:active {
-    color: red; }
-  .btn-text:link, .btn-text:visited, .btn-submit:link, .btn-submit:visited {
+  .btn-text:link, .btn-text:visited {
     margin-top: 2.5rem;
-    background-color: #44607c;
-    color: white;
+    margin-bottom: 1.1rem;
     display: inline-block;
     border-radius: 200px;
     padding: 5px 10px;
     border: 1px solid #44607c;
-    box-shadow: 0 2px 7px black; }
-  .btn-text:hover, .btn-textactive, .btn-submit:hover, .btn-submitactive {
+    box-shadow: 0 2px 6px black;
+    transition: all .2s; }
+  .btn-text:hover, .btn-textactive {
     border: 1px solid #44607c;
     box-shadow: 0 1px 5px black;
     color: white;
+    background-color: #507192;
+    transform: scale(1.1); }
+  .btn-submit {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border: 1px solid #44607c;
+    box-shadow: 0 2px 6px black; }
+  .btn:hover, .btnactive {
+    border: 1px solid #44607c;
+    box-shadow: 0 1px 4px black;
     background-color: #507192; }
 
 /*--------------------------------------CONTACT----------------------------------------*/
@@ -277,11 +281,12 @@ h2:after {
     width: 100%;
     text-align: right; }
     .about .image-container__photo {
-      margin-top: -1rem;
+      margin-top: -1.9rem;
+      margin-right: -4rem;
       border-radius: 50%;
       display: inline-block;
-      width: 150px;
-      height: 150px; }
+      width: 190px;
+      height: 190px; }
   .about .paragraph {
     max-width: 75ch; }
 
