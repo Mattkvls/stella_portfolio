@@ -28,14 +28,21 @@ body{
     font-weight: 700;
     display: inline-block;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right,rgba(200,130,100,0.9),rgba(180,100,200,.9));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    // background-image: linear-gradient(to right,$color-headings-gradient-dark, $color-headings-gradient-light);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
 }
 .heading-tertiary{
     margin: 10px 0;
 }
+
+.paragraph{
+    font-size: $default-font-size;
+    line-height: 145%;
+    &:not(:last-child){margin-bottom: 3rem;}
+}
+
 
 h2:after{
     content:" ";
@@ -47,9 +54,6 @@ h2:after{
     margin-top: 20px;
 }
 
-#name{
-    color: $color-secondary;
-}
 .heading-primary--sub{
     display: block;
 }

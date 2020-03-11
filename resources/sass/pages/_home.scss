@@ -1,51 +1,63 @@
 /*--------------------------------------ABOUT----------------------------------------*/
 .about{
-    background-color: darkgray;
-  
-    &__image-box{
-        width: 26%;
-        height: auto;
-        float: left;
-        text-align: center;
+    padding: 20rem 0;
+    padding-bottom: 30rem;
+    & .image-container{
+        padding: 2rem;
+        width: 100%;
+        // border: 1px solid red;
+        text-align: right;
+        &__photo{
+            margin-top: -1rem;
+            border-radius: 50%;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+        }
     }
-    &__profile-img{
-        display:inline-block;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-right: -50px;
-        margin-top: 20px;
-    }
-  
-}
+    & .paragraph{
+        max-width: 75ch;
 
+    }
+}
 /*--------------------------------------PROJECTS----------------------------------------*/
 .projects{
-    background-color: chocolate;
+    font-size: $default-font-size;
+    padding: 12rem 0;
+    background-image: linear-gradient(to bottom, rgba($color-midnight-blue-very-darker, .9),rgba($color-midnight-blue-very-darker, .9)) ,url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
+    background-size: cover;
 
-    &__master-box{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: auto;
-        margin-top: 40px;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+    //selects only the direct children of the projects section
+    &>*{
+        transform: skewY(7deg);
     }
-    &__project-box{
-        display: inline-block;
-        padding: 15px;
-        width: 30%;
-        margin: 0 auto;
-        border: 1px solid black;
-        margin-right: 5px;
-        text-align: center;
+    & .heading-secondary{
+        color: $color-white;
     }
-    &__project-list{
-        list-style: none;
+    & h2::after{
+        color:$color-white;
+        background-color: $color-white;
     }
-    &__project-item{
-        color: black;
-    }
+  & .project{
+      background-color: rgba($color-white,.8);
+      font-size: inherit;
+      padding: 2.5rem;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+      transition: transform 0.3s;
+      &__list{
+        list-style:none;
+      }
+      &:hover{
+          transform: translateY(-1.5rem) scale(1.03);
+      }
+
+  }
 }
-
-section{
-    padding: 80px 0;
+/*--------------------------------------CONTACT----------------------------------------*/
+.contact{
+    padding: 15rem 0;
 }

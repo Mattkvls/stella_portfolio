@@ -1,0 +1,10 @@
+//-------HEADER---------------------------------
+@keyframes cursor {
+	0%, 100% { border-color: $color-white; }
+	50% { border-color: transparent; }
+}
+
+@keyframes text {
+	0% { width: 0; }
+	100% { width: 33ch; }
+}

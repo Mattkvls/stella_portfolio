@@ -1,19 +1,33 @@
 /*--------------------------------------CONTACT----------------------------------------*/
-.contact{
-    @at-root #{&}__form{
-        background-color: darkseagreen;
-        padding: 20px;
-        width: 60%;
-        margin:0 auto;
-        border: 1px solid black;
-        text-align: center;
+.form-container{
+    background-color: rgba($color-midnight-blue-lighter,.15);
+    padding: 3rem;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.8rem;
+    box-shadow: 0 1.5rem 3rem rgba($color-midnight-blue-lighter,.2);
+    border-radius: 5px;
+
+   & input[type=text],
+    & input[type=email],
+    & textarea{
+        font-family: inherit;
+        font-size: inherit;
+        width: 100%; /*to fill their column */
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
     }
-    @at-root #{&}__form-group{
-        width: 100%;
-        margin-bottom: 1%;
+    & .col-1-of-3{
+        text-align: right;
     }
-    @at-root #{&}__label{border: 1px solid red;}
-    @at-root #{&}__input{border: 1px solid red}
-    @at-root #{&}__textarea{border: 1px solid red}
+    & .row{
+        margin-bottom: 1.6rem !important;
+    }
+    // &__label{
+    // }
+    *:focus{
+        outline: none;
+    }
 
 }
