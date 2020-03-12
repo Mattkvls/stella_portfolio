@@ -6,6 +6,37 @@
     left: 0;
    background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    &__close{
+        &:link,
+        &:visited{
+            color: $color-text-dark;
+            font-size: 5rem;
+            position: absolute;
+            top: 2.5rem;
+            right: 6rem;
+            text-decoration: none;
+            transition: scale .3s;
+            display: inline-block;
+            line-height: 1;
+        }
+        &:hover,
+        &:active{
+            transform:scale(1.2);
+        }
+
+    }
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+    //when the popup becomes the target we style the popup__content 
+    &:target &__content{
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
     &__content{
         @include absolcenter;
         width: 75%;
@@ -13,12 +44,15 @@
         box-shadow: 0 2rem 4rem rgba($color:black, $alpha:.2);
         border-radius: 3px;
         overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(.5);
+        transition: all .4s;
     }
     & .heading-tertiary{
         margin-bottom: 3rem;
     }
     &__text-box{
-        padding: 8rem;
+        padding: 10rem 8rem;
         margin-left: 15%;
         width: 70%;
     }
