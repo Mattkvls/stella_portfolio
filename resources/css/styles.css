@@ -62,7 +62,8 @@ body {
 
 .paragraph {
   font-size: 1.8rem;
-  line-height: 145%; }
+  line-height: 145%;
+  hyphens: auto; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -165,6 +166,31 @@ h2:after {
     margin-bottom: 1.6rem !important; }
   .form-container *:focus {
     outline: none; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    overflow: hidden; }
+  .popup .heading-tertiary {
+    margin-bottom: 3rem; }
+  .popup__text-box {
+    padding: 8rem;
+    margin-left: 15%;
+    width: 70%; }
 
 /*--------------------------------------FOOTER----------------------------------------*/
 .footer {

@@ -42,6 +42,7 @@ body{
 .paragraph{
     font-size: $default-font-size;
     line-height: 145%;
+    hyphens: auto;
     &:not(:last-child){margin-bottom: 3rem;}
 }
 
