@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%; }
+
 @keyframes cursor {
   0%, 100% {
     border-color: white; }
@@ -24,6 +27,7 @@ html {
   outline: none; }
 
 body {
+  font-weight: 1.6rem;
   font-family: "Lato";
   font-weight: 300;
   color: #485460;
@@ -207,8 +211,8 @@ h2:after {
     border-radius: 3px;
     overflow: hidden;
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-    transition: all .4s .2s; }
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
   .popup .heading-tertiary {
     margin-bottom: 3rem; }
   .popup__text-box {
@@ -278,11 +282,11 @@ h2:after {
     font-size: 1.6rem;
     font-weight: 300; }
   .header .heading-primary--sub {
-    width: 33ch;
+    width: 41ch;
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid white;
-    animation: cursor 1s step-start infinite, text 3s steps(33); }
+    animation: cursor 1s step-start infinite, text 3s steps(41); }
 
 #name {
   color: #698aac; }

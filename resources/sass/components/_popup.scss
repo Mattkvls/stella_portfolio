@@ -45,8 +45,8 @@
         border-radius: 3px;
         overflow: hidden;
         opacity: 0;
-        transform: translate(-50%,-50%) scale(.5);
-        transition: all .4s .2s;
+        transform: translate(-50%,-50%) scale(.25);
+        transition: all .5s .2s;
     }
     & .heading-tertiary{
         margin-bottom: 3rem;
