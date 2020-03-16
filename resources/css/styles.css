@@ -1,6 +1,3 @@
-html {
-  font-size: 62.5%; }
-
 @keyframes cursor {
   0%, 100% {
     border-color: white; }
@@ -22,12 +19,23 @@ html {
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 70%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
 
 *:focus {
   outline: none; }
 
 body {
-  font-weight: 1.6rem;
   font-family: "Lato";
   font-weight: 300;
   color: #485460;
