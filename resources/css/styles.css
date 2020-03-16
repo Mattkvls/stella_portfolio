@@ -19,15 +19,18 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
 
 *:focus {
   outline: none; }
@@ -36,7 +39,6 @@ body {
   font-family: "Lato";
   font-weight: 300;
   color: #485460;
-  box-sizing: border-box;
   line-height: 1.7; }
 
 /*----------------------HEADINGS-------------------------------*/
@@ -48,12 +50,17 @@ body {
 
 .heading-primary {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   color: #fff;
   font-size: 4rem;
   /*make it relative to the html font-size 240%*/
   word-spacing: 3px;
   letter-spacing: 1px; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 3.3rem;
+      word-spacing: 2px;
+      letter-spacing: 1px; } }
 
 .heading-secondary {
   font-size: 2.5rem;
@@ -62,12 +69,20 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem;
+      letter-spacing: .5px; } }
 
 .heading-tertiary {
-  margin: 10px auto;
-  font-size: 2rem;
+  margin: 1rem auto;
+  font-size: 1.5rem;
   font-weight: 500; }
+  @media (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 1.5rem;
+      letter-spacing: .5px; } }
 
 .paragraph {
   font-size: 1.8rem;
@@ -75,15 +90,18 @@ body {
   hyphens: auto; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .paragraph:not(:last-child) {
+      margin-bottom: 2rem; } }
 
 h2:after {
   content: " ";
   display: block;
-  width: 100px;
+  width: 10rem;
   height: 2px;
   background-color: #485460;
   margin: 0 auto;
-  margin-top: 20px; }
+  margin-top: 2rem; }
 
 .heading-primary--sub {
   display: block; }
@@ -285,13 +303,18 @@ h2:after {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-size: 1.6rem;
-    font-weight: 300; }
+    font-weight: 300;
+    backface-visibility: hidden; }
+    @media (max-width: 37.5em) {
+      .header__hero-text {
+        min-width: 70%; } }
   .header .heading-primary--sub {
-    width: 41ch;
+    width: 39ch;
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid white;
-    animation: cursor 1s step-start infinite, text 3s steps(41); }
+    animation: cursor 1s step-start infinite, text 3s steps(39);
+    backface-visibility: hidden; }
 
 #name {
   color: #698aac; }
@@ -328,6 +351,9 @@ h2:after {
   margin-top: 50px;
   margin-right: 40px;
   font-size: 1.8rem; }
+  @media (max-width: 37.5em) {
+    .navigation {
+      display: none; } }
 
 .main-nav {
   list-style-type: none;

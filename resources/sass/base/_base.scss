@@ -9,20 +9,21 @@ html{
     //sets the 1 rem to 10px. This is how we size our whole website
     font-size: 62.5%;
 
-    //we use the media query mixin for the rem 
-
-    @include respond(tab-port){
-        font-size:50%;
-    }
-    @include respond(tab-land){
-        font-size:56.25%;
-    }
     @include respond(big-desktop){
         font-size:75%;
     }
+    //we use the media query mixin for the rem 
+    @include respond(tab-land){
+        font-size:56.25%;
+    }
+    @include respond(tab-port){
+        font-size:50%;
+    }
 }
 
-
+body{
+    box-sizing: border-box;
+}
 *:focus{
     outline: none;
 }

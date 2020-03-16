@@ -20,14 +20,18 @@
         text-transform: uppercase;
         font-size: 1.6rem;
         font-weight: 300;
-    
+        backface-visibility: hidden;
+        @include respond(phone){
+            min-width: 70%;
+        }
     }
     & .heading-primary--sub{
-        width:41ch;
+        width:39ch;
         white-space: nowrap;
         overflow: hidden;
         border-right: 4px solid $color-white;
-        animation: cursor 1s step-start infinite, text 3s steps(41);
+        animation: cursor 1s step-start infinite, text 3s steps(39);
+        backface-visibility: hidden;
     }
 }
 #name{
