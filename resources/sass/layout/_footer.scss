@@ -4,7 +4,7 @@
     padding: 8rem;
     background-color: $color-midnight-blue-darker;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     color: white;
 
     &__social-box{
@@ -38,7 +38,8 @@
     }
     }
     &__copyright-text{
-        font-size: 100%;
+        font-size: 80%;
+        font-family: inherit;
     }
     &__icon-text{
         color: white;
@@ -47,8 +48,6 @@
         font-size: 80%;
     }
     &__copyright-box{
-        font-size: 1.2rem;
-        font-family: inherit;
         display: inline-block;
     }
     &__copyright-link{
