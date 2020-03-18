@@ -1,16 +1,15 @@
 /*--------------------------------------ABOUT----------------------------------------*/
 .about{
-    padding: 20rem 0;
-    padding-bottom: 30rem;
+    padding: 10rem 0 30rem 0;
+
     @include respond(tab-port){
-        padding: 15rem 0;
-        padding-bottom: 25rem;
+        padding: 12rem 0 25rem 0;
     }
 
     @include respond(phone){
-        padding: 10rem 0;
-        padding-bottom: 25rem;
+        padding: 10rem 0 25rem 0;
     }
+
     & .image-container{
         padding: 2rem;
         width: 100%;
@@ -46,17 +45,17 @@
 /*--------------------------------------PROJECTS----------------------------------------*/
 .projects{
     font-size: $default-font-size;
-    padding: 12rem 0;
+    padding: 15rem 0 22rem 0;
     background-image: linear-gradient(to bottom, rgba($color-midnight-blue-very-darker, .9),rgba($color-midnight-blue-very-darker, .9)) ,url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
     background-size: cover;
-    padding-bottom: 22rem;
 
     transform: skewY(-7deg);
     margin-top: -10rem;
 
-    // @include respond(tab-land){
-    //     padding-bottom: 20rem;
-    // }
+    @include respond(tab-land){
+        padding: 10rem 0 15rem 0;
+    }
+
     //selects only the direct children of the projects section
     &>*{
         transform: skewY(7deg);
@@ -90,7 +89,14 @@
 }
 /*--------------------------------------CONTACT----------------------------------------*/
 .contact{
-    padding: 15rem 0;
+    padding: 13rem 0 22rem 0;
+
+    @include respond(tab-port){
+        padding: 10rem 0 21rem 0;
+    }
+    @include respond(phone){
+        padding: 9rem 0 18rem 0;
+    }
 }
 
 
