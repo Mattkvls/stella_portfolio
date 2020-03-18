@@ -11,18 +11,31 @@
         margin: 5rem auto 3rem auto;
         width: 70%;
         @include respond(tab-port){
-            width: 100%;
+            width: 60%;
+        }
+        @include respond(phone){
+            width: 50%;
         }
     }
     &__link-box{
-        display: inline-block;
-        &--1{
-            margin-right: -30rem;
-        }
-        &--3{
-            margin-left: -31rem;
-        }
+        display:inline-block;
+       &:not(:last-child){
+           margin-right: 5rem;
+           @include respond(tab-port){
+            margin-right: 3.5rem;
+           }
+           @include respond(phone){
+            margin-right: 2.5rem;
+           }
+       }
         margin-bottom: 4rem;
+        @include respond(tab-port){
+            margin-bottom: 3rem;
+           }
+           @include respond(phone){
+            margin-bottom: 2rem;
+           }
+
     }
     &__social-link{
         &:link,
