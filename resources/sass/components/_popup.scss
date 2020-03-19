@@ -4,11 +4,12 @@
     position: fixed; //does not move while we scroll
     top: 0;
     left: 0;
-   background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+
     &__close{
         &:link,
         &:visited{
@@ -52,8 +53,20 @@
         margin-bottom: 3rem;
     }
     &__text-box{
-        padding: 10rem 8rem;
+        padding: 10rem 6rem;
         margin-left: 15%;
         width: 70%;
+
+        @include respond(tab-port){
+            width: 80%;
+            padding: 8rem 4rem;
+            margin-left: 10%;
+        }
+
+        @include respond(phone){
+            width: 90%;
+            padding: 6rem 3.8rem;
+            margin-left: 5%;
+        }
     }
 }

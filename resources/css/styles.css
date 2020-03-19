@@ -286,9 +286,19 @@ h2:after {
   .popup .heading-tertiary {
     margin-bottom: 3rem; }
   .popup__text-box {
-    padding: 10rem 8rem;
+    padding: 10rem 6rem;
     margin-left: 15%;
     width: 70%; }
+    @media (max-width: 56.25em) {
+      .popup__text-box {
+        width: 80%;
+        padding: 8rem 4rem;
+        margin-left: 10%; } }
+    @media (max-width: 37.5em) {
+      .popup__text-box {
+        width: 90%;
+        padding: 6rem 3.8rem;
+        margin-left: 5%; } }
 
 /*--------------------------------------FOOTER----------------------------------------*/
 .footer {
@@ -454,7 +464,7 @@ h2:after {
 
 /*--------------------------------------ABOUT----------------------------------------*/
 .about {
-  padding: 10rem 0 30rem 0; }
+  padding: 10rem 0 33rem 0; }
   @media (max-width: 56.25em) {
     .about {
       padding: 12rem 0 25rem 0; } }
