@@ -53,19 +53,19 @@
         margin-bottom: 3rem;
     }
     &__text-box{
-        padding: 10rem 6rem;
+        padding: 10rem 6rem 12rem 6rem;
         margin-left: 15%;
         width: 70%;
 
         @include respond(tab-port){
             width: 80%;
-            padding: 8rem 4rem;
+            padding: 8rem 4rem 10rem 4rem;
             margin-left: 10%;
         }
 
         @include respond(phone){
             width: 90%;
-            padding: 6rem 3.8rem;
+            padding: 6rem 3.8rem 8rem 3.8rem;
             margin-left: 5%;
         }
     }

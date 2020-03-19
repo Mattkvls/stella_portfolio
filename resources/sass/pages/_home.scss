@@ -75,21 +75,19 @@
   & .project{
       background-color: rgba($color-white,.8);
       font-size: inherit;
-      padding: 2.5rem;
-      padding-bottom: 3rem;
+      padding: 2.5rem 2rem 3rem 2rem;
       text-align: center;
       border-radius: 3px;
       box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
       transition: all 0.3s;
 
       @include respond(tab-port){
-        padding: 2rem;
-        padding-bottom: 2.5rem;
+        padding: 1.5rem 1.5rem 2.5rem 1.5rem;
       }
+
       &__paragraph{
           margin: 0 auto;
           margin-bottom: .7rem;
-          width: 80%;
 
           @include respond(tab-port){
             margin-bottom: 0;
