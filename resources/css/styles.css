@@ -108,16 +108,28 @@ h2:after {
   margin-top: 2rem; }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 2rem !important; } }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 6rem !important; } }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
 
 /*--------------------------------BUTTONS-------------------------------------------------*/
 .btn {
@@ -164,6 +176,9 @@ h2:after {
     display: inline-block;
     border: 1px solid #44607c;
     box-shadow: 0 2px 6px black; }
+    @media (max-width: 56.25em) {
+      .btn-submit {
+        margin-top: -1rem; } }
   .btn:hover, .btnactive {
     border: 1px solid #44607c;
     box-shadow: 0 1px 4px black;
@@ -178,6 +193,14 @@ h2:after {
   font-size: 1.6rem;
   box-shadow: 0 1.5rem 3rem rgba(68, 96, 124, 0.2);
   border-radius: 5px; }
+  @media (max-width: 56.25em) {
+    .form-container {
+      padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+      width: 95%; } }
+  @media (max-width: 37.5em) {
+    .form-container {
+      padding: 2rem 2rem 1rem 2rem;
+      width: 85%; } }
   .form-container input[type=text],
   .form-container input[type=email],
   .form-container textarea {
@@ -189,10 +212,32 @@ h2:after {
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc; }
+    @media (max-width: 56.25em) {
+      .form-container input[type=text],
+      .form-container input[type=email],
+      .form-container textarea {
+        width: 100%;
+        /*to fill their column */ } }
+    @media (max-width: 37.5em) {
+      .form-container input[type=text],
+      .form-container input[type=email],
+      .form-container textarea {
+        width: 100%;
+        /*to fill their column */ } }
   .form-container .col-1-of-3 {
     text-align: right; }
+    @media (max-width: 56.25em) {
+      .form-container .col-1-of-3 {
+        text-align: left;
+        margin-bottom: 1rem !important; } }
   .form-container .row {
     margin-bottom: 1.6rem !important; }
+    @media (max-width: 56.25em) {
+      .form-container .row {
+        margin-bottom: 2.5rem !important; } }
+    @media (max-width: 37.5em) {
+      .form-container .row {
+        margin-bottom: 1.7rem !important; } }
   .form-container *:focus {
     outline: none; }
 
@@ -450,7 +495,10 @@ h2:after {
   margin-top: -10rem; }
   @media (max-width: 75em) {
     .projects {
-      padding: 10rem 0 15rem 0; } }
+      padding: 10rem 0 13rem 0; } }
+  @media (max-width: 37.5em) {
+    .projects {
+      padding: 7rem 0 11rem 0; } }
   .projects > * {
     transform: skewY(7deg); }
   .projects .heading-secondary {
@@ -467,8 +515,17 @@ h2:after {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: all 0.3s; }
+    @media (max-width: 56.25em) {
+      .projects .project {
+        padding: 2rem;
+        padding-bottom: 2.5rem; } }
     .projects .project__paragraph {
-      margin-bottom: .7rem; }
+      margin: 0 auto;
+      margin-bottom: .7rem;
+      width: 80%; }
+      @media (max-width: 56.25em) {
+        .projects .project__paragraph {
+          margin-bottom: 0; } }
     .projects .project:hover {
       background-color: rgba(255, 255, 255, 0.9);
       transform: translateY(-1.5rem) scale(1.03); }
@@ -481,4 +538,4 @@ h2:after {
       padding: 10rem 0 21rem 0; } }
   @media (max-width: 37.5em) {
     .contact {
-      padding: 9rem 0 18rem 0; } }
+      padding: 8rem 0 18rem 0; } }

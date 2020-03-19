@@ -53,7 +53,11 @@
     margin-top: -10rem;
 
     @include respond(tab-land){
-        padding: 10rem 0 15rem 0;
+        padding: 10rem 0 13rem 0;
+    }
+
+    @include respond(phone){
+        padding: 7rem 0 11rem 0;
     }
 
     //selects only the direct children of the projects section
@@ -77,8 +81,19 @@
       border-radius: 3px;
       box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
       transition: all 0.3s;
+
+      @include respond(tab-port){
+        padding: 2rem;
+        padding-bottom: 2.5rem;
+      }
       &__paragraph{
+          margin: 0 auto;
           margin-bottom: .7rem;
+          width: 80%;
+
+          @include respond(tab-port){
+            margin-bottom: 0;
+          }
       }
       &:hover{
         background-color: rgba($color-white,.9);
@@ -95,7 +110,7 @@
         padding: 10rem 0 21rem 0;
     }
     @include respond(phone){
-        padding: 9rem 0 18rem 0;
+        padding: 8rem 0 18rem 0;
     }
 }
 
