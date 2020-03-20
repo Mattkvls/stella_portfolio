@@ -4,8 +4,8 @@
 .btn{
     text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20rem;
     font-size:1.6rem;
     color:$color-white;
     background-color: $color-midnight-blue-lighter;
@@ -15,7 +15,7 @@
         &:link,
         &:visited{
             border: 1px solid transparent;
-            box-shadow: 0 3px 10px black;
+            box-shadow: 0 3px 1rem black;
             color:$color-white;
             margin-top: 1%;
             background-color: $color-midnight-blue-lighter;
@@ -24,7 +24,7 @@
         &:hover{
             transform: translateY(-3px);
             border: 1px solid $color-midnight-blue-lighter;
-            box-shadow: 0 2px 10px black;
+            box-shadow: 0 2px 1rem black;
         }
         &:active{
             box-shadow: 0 2px 7px black;
@@ -39,7 +39,7 @@
             margin-bottom: 1.1rem;
             display: inline-block;
             border-radius: 200px;
-            padding: 5px 15px;
+            padding: 5px 1.5rem;
             border: 1px solid $color-midnight-blue-lighter;
             box-shadow: 0 2px 6px black;
             transition: all .2s;

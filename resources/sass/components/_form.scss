@@ -10,12 +10,12 @@
 
     @include respond(tab-port){
         padding: 2.5rem 2.5rem 1.5rem 2.5rem;
-        width: 95%;
+        width: 85%;
     }
 
     @include respond(phone){
         padding: 2rem 2rem 1rem 2rem;
-        width: 85%;
+        width: 75%;
     }
 
    & input[type=text],
@@ -51,7 +51,7 @@
             margin-bottom: 2.5rem !important;
         }
         @include respond(phone){
-            margin-bottom: 1.7rem !important;
+            margin-bottom: 1rem !important;
         }
     }
     // &__label{

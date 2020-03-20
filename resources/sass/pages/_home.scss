@@ -7,7 +7,7 @@
     }
 
     @include respond(phone){
-        padding: 10rem 0 25rem 0;
+        padding: 8rem 0 22rem 0;
     }
 
     & .image-container{
@@ -35,10 +35,23 @@
             @include respond(tab-port){
                 margin: 0 auto;
             }
+            @include respond(phone){
+                width: 16rem;
+                height: 16rem;
+            }
         }
     }
     & .paragraph{
         max-width: 75ch;
+        @include respond(tab-port){
+            padding: 2rem;
+        }
+        @include respond(phone){
+            width: 75%;
+            margin-left: 12.5%;
+            margin-top: -4rem;
+            text-align: center;
+        }
 
     }
 }
@@ -53,11 +66,11 @@
     margin-top: -10rem;
 
     @include respond(tab-land){
-        padding: 10rem 0 13rem 0;
+        padding: 10rem 5rem 13rem 5rem;
     }
 
     @include respond(phone){
-        padding: 7rem 0 11rem 0;
+        padding: 7rem 4rem 11rem 4rem;
     }
 
     //selects only the direct children of the projects section
@@ -75,23 +88,36 @@
   & .project{
       background-color: rgba($color-white,.8);
       font-size: inherit;
-      padding: 2.5rem 2rem 3rem 2rem;
+      padding: 2.5rem 2rem 2.5rem 2rem;
       text-align: center;
-      border-radius: 3px;
+      border-radius: 5px;
       box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
       transition: all 0.3s;
       backface-visibility: hidden;
 
       @include respond(tab-port){
-        padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+        padding: 1.5rem 0 2.5rem 0;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      @include respond(phone){
+        max-width: 90%; //check if this is good at 600px and if it is good at iphone 6
+        padding: 1rem 0 2rem 0;
+        margin: 0 auto;
       }
 
       &__paragraph{
+        //   padding: 1rem;
           margin: 0 auto;
           margin-bottom: .7rem;
-
+        //maybe add some padding to the paragraph to smaller sizes check for default size if needs padding
           @include respond(tab-port){
+            padding: 1rem 1.5rem 1rem 1.5rem;
             margin-bottom: 0;
+          }
+          @include respond(phone){
+            margin-bottom: 0;
+            padding: 1rem 1.5rem 1rem 1.5rem;
           }
       }
       &:hover{
