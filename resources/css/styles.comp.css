@@ -366,18 +366,21 @@ h2:after {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background-image: linear-gradient(to bottom rgba(14, 20, 25, 0.9), rgba(14, 20, 25, 0.7));
   background-color: #0e1419;
   text-align: center;
   color: #fff;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden; }
   .header__hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     min-width: 65%;
     z-index: 999; }
@@ -385,16 +388,20 @@ h2:after {
       .header__hero-text {
         min-width: 70%; } }
   .header .heading-primary--main {
+    -webkit-animation: from-top-center ease-out .75s;
     animation: from-top-center ease-out .75s; }
   .header .heading-primary--sub {
     display: block;
+    -webkit-animation: from-bottom-center ease-out .75s;
     animation: from-bottom-center ease-out .75s; }
 
 #name {
   color: #698aac; }
 
 #header-btn {
+  -webkit-animation: from-bottom-center .4s ease-out .7s;
   animation: from-bottom-center .4s ease-out .7s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
 
 .row {

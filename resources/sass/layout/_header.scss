@@ -3,38 +3,45 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to bottom rgba(0,0,0,.9), rgba(0,0,0,.9));
+    background-image: linear-gradient(to bottom rgba($color-midnight-blue-darker,.9), rgba($color-midnight-blue-darker,.7));
     background-color: $color-midnight-blue-darker;
     text-align: center;
     color: #fff;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     overflow: hidden;
 
     &__hero-text{
         position:absolute;
         top:50%;
         left:50%;
-        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
         text-transform: uppercase;
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         min-width: 65%;
-        z-index: 99999;
+        z-index: 999;
         @include respond(phone){
             min-width: 70%;
         }
     }
     & .heading-primary--main{
-        animation: from-top-center ease-out .75s;
+        -webkit-animation: from-top-center ease-out .75s;
+                animation: from-top-center ease-out .75s;
     }
     & .heading-primary--sub{
         display:block;
-        animation:from-bottom-center ease-out .75s;
+        -webkit-animation:from-bottom-center ease-out .75s;
+                animation:from-bottom-center ease-out .75s;
     }
 }
 #name{
     color: #698aac;
 }
 #header-btn{
-    animation: from-bottom-center .4s ease-out .7s;
-    animation-fill-mode: backwards;
+    -webkit-animation: from-bottom-center .4s ease-out .7s;
+            animation: from-bottom-center .4s ease-out .7s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
