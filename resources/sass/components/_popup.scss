@@ -19,11 +19,19 @@
             font-size: 5rem;
             position: absolute;
             top: 2.5rem;
-            right: 6rem;
+            right: 4rem;
             text-decoration: none;
             transition: scale .3s;
             display: inline-block;
             line-height: 1;
+
+            @include respond(tab-port){
+                //test the x button's position 
+            }
+            @include respond(phone){
+                top: 2.5rem;
+                right: 2.5rem;
+            }
         }
         &:hover,
         &:active{

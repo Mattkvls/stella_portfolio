@@ -6,45 +6,49 @@
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">-->
+    <link rel="stylesheet" href="./resources/vendors/css/animate.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
     <!-- the styles.css is for the development enable it and run the watch:sass to make changes and development -->
     <title>Stella Katsarou | Machine learning Student</title>
 </head>
 <body>
-    <header class="header" id="particles-js" id="section-header">
+    <header class="header js--section-header" id="particles-js">
             <nav class="navigation">
-                <div class="row">
+                <div class="wrapper">
                     <ul class="main-nav">
-                        <li class="main-nav__nav-item">
-                            <a href="#section-header" class="main-nav__nav-link">Home</a>
-                        </li>
-                        <li class="main-nav__nav-item">
-                            <a href="#section-about" class="main-nav__nav-link">About</a>
-                        </li>
-                        <li class="main-nav__nav-item">
-                            <a href="#section-projects" class="main-nav__nav-link">Projects</a>
-                        </li>
-                        <li class="main-nav__nav-item">
-                            <a href="#section-contact" class="main-nav__nav-link">Contact</a>
-                        </li>
-                    </ul>
+                            <li class="main-nav__nav-item">
+                                <a href="#particles-js" class="main-nav__nav-link js--scroll-to-header">Home</a>
+                            </li>
+                            <li class="main-nav__nav-item">
+                                <a href="#section-about" class="main-nav__nav-link js--scroll-to-about">About</a>
+                            </li>
+                            <li class="main-nav__nav-item">
+                                <a href="#section-projects" class="main-nav__nav-link js--scroll-to-projects">Projects</a>
+                            </li>
+                            <li class="main-nav__nav-item">
+                                <a href="#section-contact" class="main-nav__nav-link js--scroll-to-contact">Contact</a>
+                            </li>
+                        </ul>
+                        <a class="mobile-nav-icon js--nav-icon">
+                            <ion-icon class='nav-icon' size="large" name="menu"></ion-icon>
+                        </a>
                 </div>
             </nav>
         <div class="header__hero-text">
             <h1 class="heading-primary heading-primary--main">hello, i'm <span id="name">stella Katsarou</span>
             <span class="heading primary heading-primary--sub">I'm a Machine Learning Master's student</span></h1>
-            <a href="#section-about" class="btn btn-ghost" id="header-btn">learn more</a>
+            <a href="#section-about" class="btn btn-ghost js--scroll-to-about" id="header-btn">learn more</a>
         </div>
     </header>
     <main>
 
     </main>
-    <section class="about" id="section-about">
+    <section class="about js--section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">about</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col-1-of-3">
                 <div class="image-container">
                     <img src="./resources/img/IMG_1690.JPG" alt="profile-picture" class="image-container__photo">
@@ -57,11 +61,11 @@
             </div>
         </div>
     </section>
-    <section class="projects" id="section-projects">
+    <section class="projects js--section-projects" id="section-projects">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">projects</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-2">
             <div class="col-1-of-4">
                 <div class="project">
                     <h3 class="project__title heading-tertiary">Project Name</h3>
@@ -92,11 +96,11 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="section-contact">
+    <section class="contact js--section-contact" id="section-contact">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">contact</h2>
         </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="form-container">
                     <form action="" method="" class="contact__form"></form>
                         <div class="row">
@@ -175,8 +179,11 @@
             </div>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./resources/vendors/js/particles.min.js"></script>
+    <script src="./resources/js/app.js"></script>
     <script src="./resources/vendors/js/app.js"></script>
-    <script type="text/javascript" src="./resources/js/app.js"></script>
+    <script src="./resources/vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/scripts.js"></script><!--our script is the last always-->
 </body>
 </html>

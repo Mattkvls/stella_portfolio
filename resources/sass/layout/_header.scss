@@ -24,6 +24,11 @@
         z-index: 999;
         @include respond(phone){
             min-width: 70%;
+            position:absolute;
+            top:45%;
+            left:50%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
         }
     }
     & .heading-primary--main{

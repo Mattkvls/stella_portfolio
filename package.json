@@ -5,6 +5,11 @@
   "main": "app.js",
   "scripts": {
     "watch:sass": "node-sass ./resources/sass/main.scss  ./resources/css/styles.css -w",
+    "devserver":"live-server",
+    "start":"npm-run-all --parallel devserver watch:sass",
+
+
+
     "compile:sass": "node-sass ./resources/sass/main.scss  ./resources/css/styles.comp.css",
     "prefix:css":"postcss --use autoprefixer -o ./resources/css/styles.prefix.css ./resources/css/styles.comp.css",
     "compress:css": "node-sass ./resources/css/styles.prefix.css ./dist/css/style.min.css --output-style compressed",
