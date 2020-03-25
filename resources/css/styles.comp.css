@@ -14,6 +14,17 @@
     opacity: 1;
     transform: translateY(0); } }
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s; }
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1; }
+
 *,
 *::after,
 *::before {
@@ -23,13 +34,13 @@
 
 html {
   font-size: 62.5%; }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
 
@@ -60,7 +71,7 @@ body {
   /*make it relative to the html font-size 240%*/
   word-spacing: 3px;
   letter-spacing: 1px; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 2.5rem;
       word-spacing: 1px;
@@ -74,7 +85,7 @@ body {
   font-weight: 700;
   display: inline-block;
   margin-bottom: 2rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 1.9rem;
       letter-spacing: .5px; } }
@@ -83,7 +94,7 @@ body {
   margin: 1rem auto;
   font-size: 2rem;
   font-weight: 500; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-tertiary {
       font-size: 1.7rem;
       letter-spacing: .5px; } }
@@ -94,7 +105,7 @@ body {
   hyphens: auto; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .paragraph:not(:last-child) {
       margin-bottom: 2rem; } }
 
@@ -106,10 +117,10 @@ h2:after {
   background-color: #485460;
   margin: 0 auto;
   margin-top: 2rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     h2:after {
       margin-top: 1.8rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     h2:after {
       margin-top: 1rem; } }
 
@@ -121,19 +132,19 @@ h2:after {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .u-margin-bottom-medium {
       margin-bottom: 2rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 6rem !important; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -182,7 +193,7 @@ h2:after {
     display: inline-block;
     border: 1px solid #44607c;
     box-shadow: 0 2px 6px black; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .btn-submit {
         margin-top: -1rem; } }
   .btn:hover, .btnactive {
@@ -193,17 +204,18 @@ h2:after {
 /*--------------------------------------CONTACT----------------------------------------*/
 .form-container {
   background-color: rgba(68, 96, 124, 0.15);
+  -webkit-background-color: rgba(68, 96, 124, 0.15);
   padding: 3rem;
   margin: 0 auto;
   width: 60%;
   font-size: 1.6rem;
   box-shadow: 0 1.5rem 3rem rgba(68, 96, 124, 0.2);
   border-radius: 5px; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .form-container {
       padding: 2.5rem 2.5rem 1.5rem 2.5rem;
       width: 85%; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .form-container {
       padding: 2rem 2rem 1rem 2rem;
       width: 75%; } }
@@ -218,13 +230,13 @@ h2:after {
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .form-container input[type=text],
       .form-container input[type=email],
       .form-container textarea {
         width: 100%;
         /*to fill their column */ } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .form-container input[type=text],
       .form-container input[type=email],
       .form-container textarea {
@@ -232,16 +244,16 @@ h2:after {
         /*to fill their column */ } }
   .form-container .col-1-of-3 {
     text-align: right; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .form-container .col-1-of-3 {
         text-align: left;
         margin-bottom: 1rem !important; } }
   .form-container .row {
     margin-bottom: 1.6rem !important; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .form-container .row {
         margin-bottom: 2.5rem !important; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .form-container .row {
         margin-bottom: 1rem !important; } }
   .form-container *:focus {
@@ -265,11 +277,15 @@ h2:after {
     font-size: 5rem;
     position: absolute;
     top: 2.5rem;
-    right: 6rem;
+    right: 4rem;
     text-decoration: none;
     transition: scale .3s;
     display: inline-block;
     line-height: 1; }
+    @media only screen and (max-width: 37.5em) {
+      .popup__close:link, .popup__close:visited {
+        top: 2.5rem;
+        right: 2.5rem; } }
   .popup__close:hover, .popup__close:active {
     transform: scale(1.2); }
   .popup:target {
@@ -298,12 +314,12 @@ h2:after {
     padding: 10rem 6rem 12rem 6rem;
     margin-left: 15%;
     width: 70%; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .popup__text-box {
         width: 80%;
         padding: 8rem 4rem 10rem 4rem;
         margin-left: 10%; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .popup__text-box {
         width: 90%;
         padding: 6rem 3.8rem 8rem 3.8rem;
@@ -319,10 +335,10 @@ h2:after {
   .footer__social-box {
     margin: 5rem auto 3rem auto;
     width: 70%; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__social-box {
-        width: 60%; } }
-    @media (max-width: 37.5em) {
+        width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
       .footer__social-box {
         margin: 3rem auto 3rem auto;
         width: 100%; } }
@@ -331,16 +347,16 @@ h2:after {
     margin-bottom: 4rem; }
     .footer__link-box:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .footer__link-box:not(:last-child) {
           margin-right: 5rem; } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .footer__link-box:not(:last-child) {
           margin-right: 4rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__link-box {
         margin-bottom: 3rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__link-box {
         margin-bottom: 3rem; } }
   .footer__social-link:link, .footer__social-link:visited {
@@ -350,7 +366,7 @@ h2:after {
     transition: all .2s; }
     .footer__social-link:link:not(:last-child), .footer__social-link:visited:not(:last-child) {
       margin-right: 3rem; }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .footer__social-link:link:not(:last-child), .footer__social-link:visited:not(:last-child) {
           margin-right: 2rem; } }
   .footer__social-link:hover, .footer__social-link:active {
@@ -364,7 +380,7 @@ h2:after {
     display: block;
     text-transform: uppercase;
     font-size: 80%; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__icon-text {
         font-size: 70%; } }
   .footer__copyright-box {
@@ -397,9 +413,14 @@ h2:after {
     backface-visibility: hidden;
     min-width: 65%;
     z-index: 999; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header__hero-text {
-        min-width: 70%; } }
+        min-width: 70%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
   .header .heading-primary--main {
     -webkit-animation: from-top-center ease-out .75s;
     animation: from-top-center ease-out .75s; }
@@ -422,25 +443,25 @@ h2:after {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
   .row::after {
     display: table;
     clear: both;
     content: ""; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -457,23 +478,42 @@ h2:after {
     width: calc(((100% - 3 *6rem) /4) *3 + 2* 6rem); }
 
 /*---------------------NAVIGATION----------------------------------------*/
-.navigation {
+.navigation .main-nav {
   float: right;
-  margin-top: 50px;
-  margin-right: 40px;
-  font-size: 1.8rem; }
-  @media (max-width: 37.5em) {
-    .navigation {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  z-index: 100000;
+  list-style-type: none; }
+  @media only screen and (max-width: 75em) {
+    .navigation .main-nav {
+      margin-top: 5rem;
+      display: block; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation .main-nav {
+      margin-top: 5rem;
+      display: block; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation .main-nav {
+      float: left;
+      margin-top: 3rem;
       display: none; } }
-
-.main-nav {
-  list-style-type: none;
-  /*the links at the navigation bar*/ }
-  .main-nav__nav-item {
+  .navigation .main-nav__nav-item {
     display: inline-block;
-    margin-right: 30px; }
-  .main-nav__nav-link:link, .main-nav__nav-link:visited {
-    text-align: center;
+    margin-right: 2rem; }
+    .navigation .main-nav__nav-item:last-child {
+      margin-right: 8rem; }
+    @media only screen and (max-width: 75em) {
+      .navigation .main-nav__nav-item {
+        margin-right: 2rem; }
+        .navigation .main-nav__nav-item:last-child {
+          margin-right: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation .main-nav__nav-item {
+        display: block;
+        margin: 0;
+        padding: 0; } }
+  .navigation .main-nav__nav-link:link, .navigation .main-nav__nav-link:visited {
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -482,26 +522,106 @@ h2:after {
     padding: 8px 0;
     border-bottom: 2px solid transparent;
     transition: border-bottom ease 0.2s; }
-  .main-nav__nav-link:hover, .main-nav__nav-link:active {
+    @media only screen and (max-width: 37.5em) {
+      .navigation .main-nav__nav-link:link, .navigation .main-nav__nav-link:visited {
+        border: 0;
+        padding: 1rem 0;
+        text-align: left;
+        margin-top: 1rem;
+        margin-left: 5rem; } }
+  .navigation .main-nav__nav-link:hover, .navigation .main-nav__nav-link:active {
     border-bottom: 2px solid #698aac; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation .main-nav__nav-link:hover, .navigation .main-nav__nav-link:active {
+        border: 0; } }
+
+.navigation .mobile-nav-icon {
+  float: right;
+  display: none;
+  margin-top: 4rem;
+  margin-right: 4rem;
+  cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation .mobile-nav-icon {
+      display: inline-block; } }
+
+.navigation.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(2, 3, 3, 0.85);
+  z-index: 100000; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #020303;
+      z-index: 100000; } }
+  .navigation.sticky .main-nav {
+    float: right;
+    margin-top: 0;
+    font-size: 1.8rem;
+    z-index: 100000;
+    list-style-type: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation.sticky .main-nav {
+        margin-top: 0rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation.sticky .main-nav {
+        float: left;
+        margin-top: 2rem;
+        display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation.sticky .main-nav__nav-item:last-child {
+        margin-bottom: 2rem; } }
+    .navigation.sticky .main-nav__nav-link:link, .navigation.sticky .main-nav__nav-link:visited {
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: inherit;
+      font-weight: 300;
+      padding: 8px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom ease 0.2s; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation.sticky .main-nav__nav-link:link, .navigation.sticky .main-nav__nav-link:visited {
+          border: 0;
+          padding: 1rem 0;
+          text-align: left; } }
+    .navigation.sticky .main-nav__nav-link:hover, .navigation.sticky .main-nav__nav-link:active {
+      border-bottom: 2px solid #698aac; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation.sticky .main-nav__nav-link:hover, .navigation.sticky .main-nav__nav-link:active {
+          border: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation.sticky .mobile-nav-icon {
+      margin-top: 1.7rem;
+      margin-bottom: 1rem; } }
+
+.dis-main-nav {
+  display: block !important; }
 
 /*--------------------------------------ABOUT----------------------------------------*/
 .about {
-  padding: 10rem 0 33rem 0; }
-  @media (max-width: 56.25em) {
+  padding: 12rem 0 33rem 0; }
+  @media only screen and (max-width: 56.25em) {
     .about {
       padding: 12rem 0 25rem 0; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .about {
       padding: 8rem 0 22rem 0; } }
   .about .image-container {
     padding: 2rem;
     width: 100%;
     text-align: right; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .about .image-container {
         text-align: center; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .about .image-container {
         margin-top: -2rem;
         margin-bottom: -2rem; } }
@@ -512,19 +632,19 @@ h2:after {
       display: inline-block;
       width: 19rem;
       height: 19rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .about .image-container__photo {
           margin: 0 auto; } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .about .image-container__photo {
           width: 16rem;
           height: 16rem; } }
   .about .paragraph {
     max-width: 75ch; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .about .paragraph {
         padding: 2rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .about .paragraph {
         width: 75%;
         margin-left: 12.5%;
@@ -534,15 +654,15 @@ h2:after {
 /*--------------------------------------PROJECTS----------------------------------------*/
 .projects {
   font-size: 1.6rem;
-  padding: 15rem 0 22rem 0;
-  background-image: linear-gradient(to bottom, rgba(2, 3, 3, 0.9), rgba(2, 3, 3, 0.9)), url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
+  padding: 10rem 0 22rem 0;
+  background-image: linear-gradient(to bottom, rgba(2, 3, 3, 0.9), rgba(2, 3, 3, 0.9)), url(./resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .projects {
       padding: 10rem 5rem 13rem 5rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .projects {
       padding: 7rem 4rem 11rem 4rem; } }
   .projects > * {
@@ -561,12 +681,12 @@ h2:after {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: all 0.3s;
     backface-visibility: hidden; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .projects .project {
         padding: 1.5rem 0 2.5rem 0;
         max-width: 90%;
         margin: 0 auto; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .projects .project {
         max-width: 90%;
         padding: 1rem 0 2rem 0;
@@ -574,11 +694,11 @@ h2:after {
     .projects .project__paragraph {
       margin: 0 auto;
       margin-bottom: .7rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .projects .project__paragraph {
           padding: 1rem 1.5rem 1rem 1.5rem;
           margin-bottom: 0; } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .projects .project__paragraph {
           margin-bottom: 0;
           padding: 1rem 1.5rem 1rem 1.5rem; } }
@@ -588,10 +708,10 @@ h2:after {
 
 /*--------------------------------------CONTACT----------------------------------------*/
 .contact {
-  padding: 13rem 0 22rem 0; }
-  @media (max-width: 56.25em) {
+  padding: 10rem 0 22rem 0; }
+  @media only screen and (max-width: 56.25em) {
     .contact {
       padding: 10rem 0 21rem 0; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .contact {
       padding: 8rem 0 18rem 0; } }
