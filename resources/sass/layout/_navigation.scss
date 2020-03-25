@@ -9,28 +9,29 @@
 
         @include respond(tab-land){
         margin-top: 5rem;
+        display: block;
         }
 
         @include respond(tab-port){
-            margin-top: 0;
+            margin-top: 5rem;
+            display: block;
         }
-
-        //float the main nav to the left at the mobile size 
         @include respond(phone){
             float: left;
-            margin-top: 2rem;
-            margin-left: 2rem;
+            margin-top: 3rem;
+            display: none;
         }
 
+        //.navigation .main-nav --> at phone display:block; click the icon and add the class 
 
+        // li at the normal nav 
         &__nav-item{
             display: inline-block;
-            padding: .7rem 0;
+            // padding: .7rem 0;
             margin-right: 2rem;
             &:last-child{
                 margin-right: 8rem;
             }
-
             @include respond(tab-land){
                 margin-right: 2rem;
                 &:last-child{
@@ -38,29 +39,18 @@
                 }
             }
 
-            @include respond(tab-port){
-                margin-top: 7rem;
-                margin-right: 2rem;
-                &:last-child{
-                    margin-right: 7rem;
-                }
-            }
-            //make the li block level elements
             @include respond(phone){
                 display: block;
-                margin-top: .1rem;
-                margin-left: 0rem;
-                &:last-child{
-                    margin-right: 2rem;
-                }
-                
+                margin: 0;
+                padding:0;
             }
         }
-        /*the links at the navigation bar*/
+
+        //the links at the navigation bar
         &__nav-link{
             &:link,
             &:visited{
-                text-align: center;
+                display: block;
                 text-transform: uppercase;
                 text-decoration: none;
                 color: white;
@@ -72,69 +62,132 @@
 
                 @include respond(phone){
                     border: 0;
-                    display: block;
                     padding: 1rem 0;
+                    text-align: left;
+                    margin-top: 1rem;
+                    margin-left: 5rem;
                 }
             }
             &:hover,
             &:active{
                 border-bottom: 2px solid #698aac;
-            }
+                @include respond(phone){
+                border: 0;
+                }
+        }
+    
+    }//main-nav 
+
+}//navigation 
+//-----------------------Mobile nav ---------------------------------
+    // at the initial state which we can NOT see it 
+    .mobile-nav-icon{
+        float: right;
+        display: none;
+        margin-top: 4rem;
+        margin-right: 4rem;
+        cursor: pointer;
+
+        //make the mobile humburger icon appears at the mobile size 
+        @include respond(phone){
+            display: inline-block;
         }
     }
-}
-//---------------STICKY NAVIGATION----------------------------
-.navigation{
-    &.sticky{ //when the nav has both classes. ΝΑΙ! ειναι σωστο πρεπει να εχει κ τις δυο class ταυτοχρονα!
 
-        // .navigation.sticky .main-nav -----> το main-nav ειναι παιδι δλδ ειναι μεσα σε navigation που εχει ταυτοχρονα την sticky class.
-        & .main-nav{ //when this class is inside the navigation and sticky class 
-            padding: 0;
-            margin: 0;
-            position: fixed;
+}
+
+//-----------STICKY NAVY-----------------------------------
+.navigation{
+    &.sticky{
+        //we style the .sticky class NOT the .navigation.sticky .main-nav 
+        //the styles below will make the nav sticky 
+        position: fixed; //stays at the same point no matter if we scroll 
+        top: 0;
+        right: 0;
+        width: 100%; // we want it to occupy the whole browser width
+        background-color: rgba($color-midnight-blue-very-darker,.85);
+        z-index: 100000;
+
+        @include respond(phone){
+            position: fixed; //stays at the same point no matter if we scroll 
             top: 0;
-            right: 0;
-            width:100%;
-            text-align: right; //γιατι δεν εχουμε πλεον το float οπως στην κανονικη
-            background-color:$color-midnight-blue-very-darker; //για τεστ
-            box-shadow: 0px 3px 7px rgba($color-midnight-blue-darker,.9);
+            left: 0;
+            width: 100%; // we want it to occupy the whole browser width
+            background-color: $color-midnight-blue-very-darker;
             z-index: 100000;
-                 &__nav-item{ //ετσι ειναι το σωστο γιατι κανει copy ολο το selector μεχρι εδω ετσι εχει και τις αλλες δλδ   .navigation.sticky .main-nav__nav-item
-                    //  padding: 2rem 0; //σβησε το αμα τελειωσεις τα τεστ
-                            @include respond(tab-port){
-                                margin-top: 0rem;
-                            }
-                 }
-                /*the links at the navigation bar*/
-                &__nav-link{
-                    &:link,
-                    &:visited{
-                        color: white;
-                }
-                    &:hover,
-                    &:active{
-                        border-bottom: 2px solid #698aac;
-                }
-            }
         }
-    }
-}
-//------------------------------MOBILE NAVIGATION-----------------------------------------------------------------
-.navigation{
-          .mobile-nav-icon{
+    
+        //styles which will apply to main-nav during the sticky state
+        & .main-nav{
             float: right;
-            display: none;
-            margin-top: 4rem;
-            margin-right: 4rem;
-            cursor: pointer;
+            margin-top: 0;
+            font-size: 1.8rem;
+            z-index: 100000;
+            list-style-type: none;
 
+            @include respond(tab-port){
+                margin-top: 0rem;
+            }
             @include respond(phone){
-                display: inline-block;
+                float: left;
+                margin-top: 2rem;
+                display: none;
+            }
+
+            //.navigation.sticky .main-nav --> to phone media display:block;
+
+            &__nav-item{
+                @include respond(phone){
+                    &:last-child{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+    
+
+            //style the links inside the sticky
+            &__nav-link{
+                &:link,
+                &:visited{
+                    display: block;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $color-white;
+                    font-size: inherit;
+                    font-weight: 300;
+                    padding: 8px 0;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom ease 0.2s;
+
+                    //sticky state and mobile
+                    @include respond(phone){
+                        border: 0;
+                        padding: 1rem 0;
+                        text-align: left;
+                        }
+                }
+                &:hover,
+                &:active{
+                    border-bottom: 2px solid #698aac;
+                    @include respond(phone){
+                    border: 0;
+                    }
+            
+                }    
             }
         }
-     .mobile-nav-icon i{
-        font-size: 200%;
-        color:$color-white;
-    }
-
+        
+        //reduce the margin-top and add margin bottom to the mbile nav during the sticky state NOT in the header
+        & .mobile-nav-icon{
+            //make the mobile humburger icon appears at the mobile size 
+            @include respond(phone){
+                //change the margin top and add margin bottom 
+                margin-top: 1.7rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }//sticky
+}
+.dis-main-nav{
+    display:block !important;
 }

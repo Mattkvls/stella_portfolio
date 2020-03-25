@@ -13,7 +13,6 @@ $(document).ready(function(){
             $('.navigation').removeClass('sticky'); 
         }
     },{offset: '70px'})
-});
 
 //----------------------SCROLL ON BTN ---------------------------
 // 
@@ -41,25 +40,6 @@ $('.js--scroll-to-contact').click(function(){
 
 
 
-
-
-
-//-----if enabled the popup does not work 
-// $(function() {
-//     $('a[href*="#"]:not([href="#"])').click(function() {
-//       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//         var target = $(this.hash);
-//         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//         if (target.length) {
-//           $('html, body').animate({
-//             scrollTop: target.offset().top
-//           }, 1000);
-//           return false;
-//         }
-//       }
-//     });
-//   });
-
 $('.js--wp-1').waypoint(function(direction){
     $('.js--wp-1').addClass('animated fadeIn');
       }, {offset: '50%'});
@@ -79,12 +59,15 @@ $('.js--wp-1').waypoint(function(direction){
 
 //--------MOBILE NAVIGATION--------------------------
 $('.js--nav-icon').click(function(){
-    //save the navigation selection 
+  console.log("you clicked the nav-icon")
     var nav=$('.js--main-nav');
-    var icon=$('.js--nav-icon .nav-icon')
-    nav.slideToggle(200); //will do the animation for the nav-list 
-    
-  
+    var icon=$('.js--nav-icon')
+    // nav.slideToggle(200); //opens and close a box 
+    if(nav.hasClass("dis-main-nav")){
+      nav.removeClass('dis-main-nav');
+    }else{
+      nav.addClass('dis-main-nav');
+    }
     if(icon.attr('name')=='menu'){
       icon.attr('name','close');
       // icon.removeAttr('name');
@@ -92,3 +75,5 @@ $('.js--nav-icon').click(function(){
       icon.attr('name','menu');
     }
   });
+
+});
