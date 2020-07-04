@@ -50,6 +50,10 @@ body {
 *:focus {
   outline: none; }
 
+.grid-container {
+  display: grid;
+  grid-template-rows: 100vh min-content min-content min-content; }
+
 body {
   font-family: "Lato";
   font-weight: 300;
@@ -328,37 +332,28 @@ h2:after {
 /*--------------------------------------FOOTER----------------------------------------*/
 .footer {
   padding: 6rem;
-  background-color: #0e1419;
-  text-align: center;
-  font-size: 1.6rem;
-  color: white; }
-  .footer__social-box {
-    margin: 5rem auto 3rem auto;
-    width: 70%; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__social-box {
-        width: 80%; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer__social-box {
-        margin: 3rem auto 3rem auto;
-        width: 100%; } }
-  .footer__link-box {
-    display: inline-block;
-    margin-bottom: 4rem; }
-    .footer__link-box:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .footer__link-box:not(:last-child) {
-          margin-right: 5rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .footer__link-box:not(:last-child) {
-          margin-right: 4rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .footer__link-box {
-        margin-bottom: 3rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer__link-box {
-        margin-bottom: 3rem; } }
+  background-color: #0e1419; }
+  .footer__logo-container {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+    grid-gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff; }
+  .footer__social-logo {
+    font-size: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    fill: #44607c; }
   .footer__social-link:link, .footer__social-link:visited {
     display: inline-block;
     text-decoration: none;
@@ -655,16 +650,10 @@ h2:after {
 .projects {
   font-size: 1.6rem;
   padding: 10rem 0 22rem 0;
-  background-image: linear-gradient(to top, rgba(2, 3, 3, 0.75)), url(/dist/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
+  background-image: linear-gradient(to top, rgba(2, 3, 3, 0.75), rgba(2, 3, 3, 0.75)), url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
-  @media only screen and (max-width: 75em) {
-    .projects {
-      padding: 10rem 5rem 13rem 5rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .projects {
-      padding: 7rem 4rem 11rem 4rem; } }
   .projects > * {
     transform: skewY(7deg); }
   .projects .heading-secondary {
@@ -705,6 +694,24 @@ h2:after {
     .projects .project:hover {
       background-color: rgba(255, 255, 255, 0.9);
       transform: translateY(-1.5rem) scale(1.03); }
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, max-content));
+  grid-gap: 3rem;
+  justify-content: center; }
+
+.project-1 {
+  grid-row: 1/2; }
+
+.project-2 {
+  grid-row: 1/2; }
+
+.project-3 {
+  grid-row: 2/3; }
+
+.project-4 {
+  grid-row: 2/3; }
 
 /*--------------------------------------CONTACT----------------------------------------*/
 .contact {

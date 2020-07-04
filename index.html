@@ -7,175 +7,172 @@
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/vendors/css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./resources/css/styles.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
     <!-- the styles.css is for the development enable it and run the watch:sass to make changes and development -->
-    <title>Stella Katsarou | Machine learning Student</title>
+    <title>Stella Katsarou | Machine learning Graduate</title>
 </head>
 <body>
-    <header class="header js--section-header" id="particles-js">
-            <nav class="navigation ">
-                <div class="wrap-mob-main">
-                    <ul class="main-nav js--main-nav">
-                        <li class="main-nav__nav-item">
-                            <a href="#particles-js" class="main-nav__nav-link js--scroll-to-header">Home</a>
-                        </li>
-                        <li class="main-nav__nav-item">
-                            <a href="#section-about" class="main-nav__nav-link js--scroll-to-about">About</a>
-                        </li>
-                        <li class="main-nav__nav-item">
-                            <a href="#section-projects" class="main-nav__nav-link js--scroll-to-projects">Projects</a>
-                        </li>
-                        <li class="main-nav__nav-item">
-                            <a href="#section-contact" class="main-nav__nav-link js--scroll-to-contact">Contact</a>
-                        </li>
-                    </ul>
-                    <a class="mobile-nav-icon">
-                        <ion-icon class='nav-icon js--nav-icon' size="large" name="menu"></ion-icon>
+    <div class="grid-container">
+        <header class="header js--section-header" id="particles-js">
+                <nav class="navigation ">
+                    <div class="wrap-mob-main">
+                        <ul class="main-nav js--main-nav">
+                            <li class="main-nav__nav-item">
+                                <a href="#particles-js" class="main-nav__nav-link js--scroll-to-header">Home</a>
+                            </li>
+                            <li class="main-nav__nav-item">
+                                <a href="#section-about" class="main-nav__nav-link js--scroll-to-about">About</a>
+                            </li>
+                            <li class="main-nav__nav-item">
+                                <a href="#section-projects" class="main-nav__nav-link js--scroll-to-projects">Projects</a>
+                            </li>
+                            <li class="main-nav__nav-item">
+                                <a href="#section-contact" class="main-nav__nav-link js--scroll-to-contact">Contact</a>
+                            </li>
+                        </ul>
+                        <a class="mobile-nav-icon">
+                            <ion-icon class='nav-icon js--nav-icon' size="large" name="menu"></ion-icon>
+                        </a>
+                    </div>
+                </nav>
+            <div class="header__hero-text">
+                <h1 class="heading-primary heading-primary--main">hello, i'm <span id="name">stella Katsarou</span>
+                <span class="heading primary heading-primary--sub">I'm a Machine Learning Master's student</span></h1>
+                <a href="#section-about" class="btn btn-ghost js--scroll-to-about" id="header-btn">learn more</a>
+            </div>
+        </header>
+        <main>
+            <section class="about js--section-about" id="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">about</h2>
+                </div>
+                <div class="row js--wp-1">
+                    <div class="col-1-of-3">
+                        <div class="image-container">
+                            <img src="./resources/img/IMG_1690.JPG" alt="profile-picture" class="image-container__photo">
+                        </div>
+                    </div>
+                    <div class="col-2-of-3">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, facere at. Veritatis cumque, voluptas facilis recusandae nesciunt exercitationem deleniti, numquam iusto rerum magni illo! Itaque voluptates consequatur fugit molestias assumenda illum corporis repudiandae non odit enim temporibus, ut soluta aperiam in unde incidunt dolorem ex maiores vel, natus quis dolores voluptatibus! Minus, mollitia? Consequatur obcaecati optio pariatur laborum quaerat tempora, expedita recusandae quidem.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="projects js--section-projects" id="section-projects">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">projects</h2>
+                </div>
+                <div class=" project-container js--wp-2">
+                    <div class="project project-1">
+                        <h3 class="project__title heading-tertiary">Project Name</h3>
+                        <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
+                        <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
+                    </div>
+                    <div class="project project-2">
+                        <h3 class="project__title heading-tertiary">Project Name</h3>
+                        <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
+                        <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
+                    </div>
+                    <div class="project project-3">
+                        <h3 class="project__title heading-tertiary">Project Name</h3>
+                        <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
+                        <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
+                    </div>
+                    <div class="project project-4">
+                        <h3 class="project__title heading-tertiary">Project Name</h3>
+                        <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
+                        <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
+                    </div>
+                </div>
+            </section>
+            <section class="contact js--section-contact" id="section-contact">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">contact</h2>
+                </div>
+                    <div class="row js--wp-3">
+                        <div class="form-container">
+                            <form action="" method="" class="contact__form"></form>
+                                <div class="row">
+                                    <div class="col-1-of-3">
+                                        <label class="form-container__label" for="name">Your name please</label>
+                                    </div>
+                                    <div class="col-2-of-3">
+                                        <input class="form-container__input" type="text" name="name" placeholder="Your name" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1-of-3">
+                                        <label class="form-container__label" for="email">Your email please</label>
+                                    </div>
+                                    <div class="col-2-of-3">
+                                        <input class="form-container__input" type="email" name="email" id="email" placeholder="Your email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1-of-3">
+                                        <label class="form-container__label" for="message">Your message </label>
+                                    </div>
+                                    <div class="col-2-of-3">
+                                        <textarea class="form-container__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1-of-3">
+                                        <label class="form-container__label" for="submit">&nbsp;</label>
+                                    </div>
+                                    <div class="col-2-of-3">
+                                        <input type="submit" class="btn btn-submit" Id="submit">
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>          
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-container">
+                <div class="footer__socialbox footer__socialbox--1">
+                    <a class="footer__social-link" href="https://www.facebook.com/stella.kats2" target="new">
+                        <svg class="footer__social-logo">
+                            <use xlink:href="/resources/img/symbol-defs.svg#icon-facebook2"></use>
+                        </svg>
+                        <span class="footer__icon-text">facebook</span>
                     </a>
                 </div>
-            </nav>
-        <div class="header__hero-text">
-            <h1 class="heading-primary heading-primary--main">hello, i'm <span id="name">stella Katsarou</span>
-            <span class="heading primary heading-primary--sub">I'm a Machine Learning Master's student</span></h1>
-            <a href="#section-about" class="btn btn-ghost js--scroll-to-about" id="header-btn">learn more</a>
-        </div>
-    </header>
-    <main>
-
-    </main>
-    <section class="about js--section-about" id="section-about">
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">about</h2>
-        </div>
-        <div class="row js--wp-1">
-            <div class="col-1-of-3">
-                <div class="image-container">
-                    <img src="./resources/img/IMG_1690.JPG" alt="profile-picture" class="image-container__photo">
+                <div class="footer__socialbox footer__socialbox--2">
+                    <a class="footer__social-link" href="https://www.linkedin.com/in/stella-katsarou-aaaaab80/" target="new">
+                        <svg class="footer__social-logo">
+                            <use xlink:href="/resources/img/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                        <span class="footer__icon-text">LinkedIn</span>
+                    </a>
+                </div>
+                <div class="footer__socialbox footer__socialbox--3">
+                    <a class="footer__social-link" href="https://github.com/Stellakats" target="new">
+                        <svg class="footer__social-logo">
+                            <use xlink:href="/resources/img/symbol-defs.svg#icon-github"></use>
+                        </svg>
+                        <span class="footer__icon-text">GitHub</span>
+                    </a>
+                </div>
+                <div class="footer__socialbox footer__socialbox--4">
+                    <a class="footer__social-link" href="mailto:stellakats2@gmail.com" target="new">
+                        <svg class="footer__social-logo">
+                            <use xlink:href="/resources/img/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        <span class="footer__icon-text">Email</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-2-of-3">
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, facere at. Veritatis cumque, voluptas facilis recusandae nesciunt exercitationem deleniti, numquam iusto rerum magni illo! Itaque voluptates consequatur fugit molestias assumenda illum corporis repudiandae non odit enim temporibus, ut soluta aperiam in unde incidunt dolorem ex maiores vel, natus quis dolores voluptatibus! Minus, mollitia? Consequatur obcaecati optio pariatur laborum quaerat tempora, expedita recusandae quidem.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="projects js--section-projects" id="section-projects">
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">projects</h2>
-        </div>
-        <div class="row js--wp-2">
-            <div class="col-1-of-4">
-                <div class="project">
-                    <h3 class="project__title heading-tertiary">Text Classification using String Kernels</h3>
-                    <p class="project__paragraph">In this project the String Subsequence Kernel (SSK) algorithm is re-implemented.</p>
-                    <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="project">
-                    <h3 class="project__title heading-tertiary">Project Name</h3>
-                    <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
-                    <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="project">
-                    <h3 class="project__title heading-tertiary">Project Name</h3>
-                    <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
-                    <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="project">
-                    <h3 class="project__title heading-tertiary">Project Name</h3>
-                    <p class="project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores?</p>
-                    <a href="#popup" class="btn btn-text">Learn more &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact js--section-contact" id="section-contact">
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">contact</h2>
-        </div>
-            <div class="row js--wp-3">
-                <div class="form-container">
-                    <form action="" method="" class="contact__form"></form>
-                        <div class="row">
-                            <div class="col-1-of-3">
-                                <label class="form-container__label" for="name">Your name please</label>
-                            </div>
-                            <div class="col-2-of-3">
-                                <input class="form-container__input" type="text" name="name" placeholder="Your name" id="name" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-1-of-3">
-                                <label class="form-container__label" for="email">Your email please</label>
-                            </div>
-                            <div class="col-2-of-3">
-                                <input class="form-container__input" type="email" name="email" id="email" placeholder="Your email" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-1-of-3">
-                                <label class="form-container__label" for="message">Your message </label>
-                            </div>
-                            <div class="col-2-of-3">
-                                <textarea class="form-container__textarea" name="message" id="message" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-1-of-3">
-                                <label class="form-container__label" for="submit">&nbsp;</label>
-                            </div>
-                            <div class="col-2-of-3">
-                                <input type="submit" class="btn btn-submit" Id="submit">
-                            </div>
-                        </div>
-                    </form>  
-                </div>
-            </div>          
-    </section>
-    <footer class="footer">
-        <div class="row">
-            <div class="footer__social-box">
-                <div class="row">
-                        <div class="footer__link-box footer__link-box--1">
-                            <a class="footer__social-link" href="https://www.facebook.com/stella.kats2" target="new">
-                                <ion-icon size="large" name="logo-facebook"></ion-icon>
-                                <span class="footer__icon-text">facebook</span>
-                            </a>
-                        </div>
-                        <div class="footer__link-box footer__link-box--2">
-                            <a class="footer__social-link" href="https://www.linkedin.com/in/stella-katsarou-aaaaab80/" target="new">
-                                <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                                <span class="footer__icon-text">LinkedIn</span>
-                            </a>
-                        </div>
-                        <div class="footer__link-box footer__link-box--3">
-                            <a class="footer__social-link" href="https://github.com/Stellakats" target="new">
-                                <ion-icon size="large" name="logo-github"></ion-icon>
-                                <span class="footer__icon-text">GitHub</span>
-                            </a>
-                        </div>
-                        <div class="footer__link-box footer__link-box--4">
-                            <a class="footer__social-link" href="mailto:stellakats2@gmail.com" target="new">
-                                <ion-icon size="large" name="mail"></ion-icon>
-                                <span class="footer__icon-text">Email</span>
-                            </a>
-                        </div>
-                </div>
-            </div><!--social wrapper-->
-            <div class="row">
+            <div class="footer__copyright">
                 <div class="footer__copyright-box">
                     <p class="footer__copyright-text">Copyright © 2020 by <a href="http://mattkatsivelis.com" class="footer__copyright-link" target="new">Matt Katsivelis</a></p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div><!--this is the end of container-->
     <section class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__text-box">

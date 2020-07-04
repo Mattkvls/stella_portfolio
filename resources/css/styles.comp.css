@@ -327,68 +327,9 @@ h2:after {
 
 /*--------------------------------------FOOTER----------------------------------------*/
 .footer {
-  padding: 6rem;
-  background-color: #0e1419;
-  text-align: center;
-  font-size: 1.6rem;
-  color: white; }
-  .footer__social-box {
-    margin: 5rem auto 3rem auto;
-    width: 70%; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__social-box {
-        width: 80%; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer__social-box {
-        margin: 3rem auto 3rem auto;
-        width: 100%; } }
-  .footer__link-box {
-    display: inline-block;
-    margin-bottom: 4rem; }
-    .footer__link-box:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .footer__link-box:not(:last-child) {
-          margin-right: 5rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .footer__link-box:not(:last-child) {
-          margin-right: 4rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .footer__link-box {
-        margin-bottom: 3rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer__link-box {
-        margin-bottom: 3rem; } }
-  .footer__social-link:link, .footer__social-link:visited {
-    display: inline-block;
-    text-decoration: none;
-    color: #44607c;
-    transition: all .2s; }
-    .footer__social-link:link:not(:last-child), .footer__social-link:visited:not(:last-child) {
-      margin-right: 3rem; }
-      @media only screen and (max-width: 37.5em) {
-        .footer__social-link:link:not(:last-child), .footer__social-link:visited:not(:last-child) {
-          margin-right: 2rem; } }
-  .footer__social-link:hover, .footer__social-link:active {
-    color: #507192;
-    transform: scale(1.1); }
-  .footer__copyright-text {
-    font-size: 90%;
-    font-family: inherit; }
-  .footer__icon-text {
-    color: white;
-    display: block;
-    text-transform: uppercase;
-    font-size: 80%; }
-    @media only screen and (max-width: 37.5em) {
-      .footer__icon-text {
-        font-size: 70%; } }
-  .footer__copyright-box {
-    display: inline-block; }
-  .footer__copyright-link:link, .footer__copyright-link:visited {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none; }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem; }
 
 /*---------------------HEADER--------------------------------------------*/
 .header {

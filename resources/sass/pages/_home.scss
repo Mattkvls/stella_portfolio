@@ -60,19 +60,20 @@
     font-size: $default-font-size;
     padding: 10rem 0 22rem 0;
     // background-image: linear-gradient(to top, rgba($color-midnight-blue-very-darker, .75)), url(/resources/img/background.jpg);
-    background-image: linear-gradient(to top, rgba($color-midnight-blue-very-darker, .75)), url(/dist/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
+     background-image: linear-gradient(to top, rgba($color-midnight-blue-very-darker, .75),rgba($color-midnight-blue-very-darker, .75)), url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
+    //background-image: linear-gradient(rgba($color-midnight-blue-very-darker, .75),rgba($color-midnight-blue-very-darker, .75));
     background-size: cover;
 
     transform: skewY(-7deg);
     margin-top: -10rem;
 
-    @include respond(tab-land){
-        padding: 10rem 5rem 13rem 5rem;
-    }
+    // @include respond(tab-land){
+    //     padding: 10rem 5rem 13rem 5rem;
+    // }
 
-    @include respond(phone){
-        padding: 7rem 4rem 11rem 4rem;
-    }
+    // @include respond(phone){
+    //     padding: 7rem 4rem 11rem 4rem;
+    // }
 
     //selects only the direct children of the projects section
     &>*{
@@ -127,6 +128,20 @@
       }
 
   }
+}
+
+.project{
+    &-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(40rem, max-content));
+        grid-gap: 3rem; //change it at small screen size with media queries
+
+        justify-content: center;
+    }
+    &-1{grid-row: 1/2;}
+    &-2{grid-row: 1/2;}
+    &-3{grid-row: 2/3;}
+    &-4{ grid-row: 2/3;}
 }
 /*--------------------------------------CONTACT----------------------------------------*/
 .contact{
