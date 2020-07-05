@@ -6,7 +6,8 @@
   "scripts": {
     "watch:sass": "node-sass ./resources/sass/main.scss  ./resources/css/styles.css -w",
     "devserver":"live-server --browser=firefox",
-    "start":"npm-run-all --parallel devserver watch:sass",
+    "start":"node app.js",
+    "startx":"npm-run-all --parallel devserver watch:sass",
 
 
 
