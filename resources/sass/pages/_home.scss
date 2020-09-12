@@ -59,21 +59,11 @@
 .projects{
     font-size: $default-font-size;
     padding: 10rem 0 22rem 0;
-     //background-image: linear-gradient(to top, rgba($color-midnight-blue-very-darker, .75),rgba($color-midnight-blue-very-darker, .75)), url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
-     //https://github.com/Mattkvls/stella_portfolio/blob/master/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg
-     background-image: linear-gradient(to top, rgba($color-midnight-blue-very-darker, .75),rgba($color-midnight-blue-very-darker, .75)), url(../../img/markus-spiske-466ENaLuhLY-unsplash.jpg);
+     background-image: linear-gradient(to top, rgba($color-midnight-blue-very-darker, .75),rgba($color-midnight-blue-very-darker, .75)), url(/resources/img/markus-spiske-466ENaLuhLY-unsplash.jpg);
     background-size: cover;
 
     transform: skewY(-7deg);
     margin-top: -10rem;
-
-    // @include respond(tab-land){
-    //     padding: 10rem 5rem 13rem 5rem;
-    // }
-
-    // @include respond(phone){
-    //     padding: 7rem 4rem 11rem 4rem;
-    // }
 
     //selects only the direct children of the projects section
     &>*{
@@ -88,6 +78,9 @@
     }
     //for demo 
   & .project{
+      width:300px;
+      height: 240px;
+      display: inline-block;
       background-color: rgba($color-white,.8);
       font-size: inherit;
       padding: 2.5rem 2rem 2.5rem 2rem;
@@ -99,26 +92,25 @@
 
       @include respond(tab-port){
         padding: 1.5rem 0 2.5rem 0;
-        max-width: 90%;
+        width:65%;
         margin: 0 auto;
       }
       @include respond(phone){
-        max-width: 90%; //check if this is good at 600px and if it is good at iphone 6
-        padding: 1rem 0 2rem 0;
+        width: 60%; //check if this is good at 600px and if it is good at iphone 6
+        padding: 1rem 0 0 0;
         margin: 0 auto;
       }
 
       &__paragraph{
-        //   padding: 1rem;
           margin: 0 auto;
           margin-bottom: .7rem;
         //maybe add some padding to the paragraph to smaller sizes check for default size if needs padding
           @include respond(tab-port){
             padding: 1rem 1.5rem 1rem 1.5rem;
-            margin-bottom: 0;
+            margin-top: 2.5rem;
           }
           @include respond(phone){
-            margin-bottom: 0;
+            margin-top: 2.5rem;
             padding: 1rem 1.5rem 1rem 1.5rem;
           }
       }
@@ -132,16 +124,19 @@
 
 .project{
     &-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit ,minmax(40rem, max-content));
-        grid-gap: 3rem; //change it at small screen size with media queries
+       display: grid;
+       grid-template-columns:repeat(auto-fit,minmax(300px, 1fr)) ;
+       justify-items: center;
+       grid-gap: 5%;
 
-        justify-content: center;
+      @include respond(phone){
+ 
+      }
     }
-    &-1{grid-row: 1/2;}
-    &-2{grid-row: 1/2;}
-    &-3{grid-row: 2/3;}
-    &-4{ grid-row: 2/3;}
+    // &-1{grid-column: col-start 1/ col-end 1;}
+    // &-2{grid-column: col-start 2/ col-end 2;}
+    // &-3{grid-column: col-start 3/ col-end 3;}
+
 }
 /*--------------------------------------CONTACT----------------------------------------*/
 .contact{
